@@ -1,0 +1,23 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "Radiant Network Prestige BP",
+		"uuid": "6411692d-e7d3-4231-b486-16ebafba3129",
+		"description": "Prestige Behaviors for Radiant Network\nBy raptor#4545",
+		"version": [1, 0, 0],
+		"min_engine_version": [1, 19, 50]
+	},
+	"modules": [
+		{
+			"type": "data",
+			"uuid": "c908ff50-2063-4c55-a4e5-8c3a20966a0e",
+			"version": [1, 0, 0]
+		}
+	],
+	"metadata": {
+		"authors": [
+		  "raptor#4545"
+		],
+		"url": "http://radiantnet.xyz"
+	}
+}
