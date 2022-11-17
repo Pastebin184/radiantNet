@@ -1,0 +1,20 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "radiant:mines",
+            "geometry": {
+                "default": "geometry.mines"
+            },
+            "render_controllers": [
+                "controller.render.skeleton"
+            ],
+            "textures": {
+                "default": "textures/entity/blocks.png"
+            },
+            "materials": {
+                "default": "npc"
+            }
+        }
+    }
+}

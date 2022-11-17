@@ -1,16 +1,16 @@
 {
 	"format_version": 2,
 	"header": {
-		"name": "Radiant Network Levels BP",
-		"uuid": "2086e6e9-a894-4c16-8bdd-31fc789a3e97",
-		"description": "Level Behaviors for Radiant Network\nBy raptor#4545",
+		"name": "Radiant Network Mines BP",
+		"uuid": "16a5eed6-fa1c-48b3-9bee-5bca301a02e4",
+		"description": "Mine Behaviors for Radiant Network\nBy raptor#4545",
 		"version": [1, 0, 0],
 		"min_engine_version": [1, 19, 41]
 	},
 	"modules": [
 		{
 			"type": "data",
-			"uuid": "d98f15fe-0af3-40cf-862a-f1c289593225",
+			"uuid": "0b75cd4f-fc8b-4816-a85b-c0b8090fe82f",
 			"version": [1, 0, 0]
 		}
 	],
