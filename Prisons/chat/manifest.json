@@ -1,1 +1,55 @@
-
+{
+    "format_version": 2,
+    "header": {
+        "name": "Radiant Chat Ranks",
+        "description": "Custom pack for Radiant Network",
+        "uuid": "6336ca90-70d8-4edd-b178-5bc2a2febfea",
+        "version": [
+            1,
+            0,
+            0
+        ],
+        "min_engine_version": [
+            1,
+            19,
+            50
+        ]
+    },
+    "modules": [
+        {
+            "type": "data",
+            "uuid": "5320e237-cf7f-4437-a200-d01d98a1d886",
+            "version": [
+                1,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "javascript",
+            "uuid": "d55c234b-9147-4e19-bd33-712cb8f2a47e",
+            "version": [
+                1,
+                0,
+                0
+            ],
+            "entry": "scripts/index.js"
+        }
+    ],
+    "metadata": {
+        "authors": [
+            "Pastebin#8616"
+        ],
+        "url": "http://radiantnet.xyz"
+    },
+    "dependencies": [
+        {
+            "module_name": "@minecraft/server",
+            "version": "1.0.0-beta"
+        },
+        {
+            "module_name": "@minecraft/server-ui",
+            "version": "1.0.0-beta"
+        }
+    ]
+}
