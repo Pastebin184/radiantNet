@@ -1,0 +1,23 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "Radiant Network Mines RP",
+		"uuid": "c4b32e1a-86b7-487c-9532-cdefca0173de",
+		"description": "Mine Resources Radiant Network\nBy raptor#4545",
+		"version": [1, 1, 0],
+		"min_engine_version": [1, 19, 41]
+	},
+	"modules": [
+		{
+			"type": "resources",
+			"uuid": "43f8f238-c3fd-46f7-b52f-02fd401f44e8",
+			"version": [1, 1, 0]
+		}
+	],
+    "metadata": {
+		"authors": [
+		  "raptor#4545"
+		],
+		"url": "http://radiantnet.xyz"
+	}
+}

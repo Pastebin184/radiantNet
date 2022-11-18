@@ -1,16 +1,16 @@
 {
 	"format_version": 2,
 	"header": {
-		"name": "Radiant Network Levels BP",
-		"uuid": "2086e6e9-a894-4c16-8bdd-31fc789a3e97",
-		"description": "Level Behaviors for Radiant Network\nBy raptor#4545",
+		"name": "Radiant Network Prestige BP",
+		"uuid": "6411692d-e7d3-4231-b486-16ebafba3129",
+		"description": "Prestige Behaviors for Radiant Network\nBy raptor#4545",
 		"version": [1, 0, 0],
 		"min_engine_version": [1, 19, 41]
 	},
 	"modules": [
 		{
 			"type": "data",
-			"uuid": "d98f15fe-0af3-40cf-862a-f1c289593225",
+			"uuid": "c908ff50-2063-4c55-a4e5-8c3a20966a0e",
 			"version": [1, 0, 0]
 		}
 	],
