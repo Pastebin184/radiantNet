@@ -1,0 +1,66 @@
+{
+    "resource_pack_name": "items",
+    "texture_name": "atlas.items",
+    "texture_data": {
+        "radiant:coal_ore": {
+            "textures": "textures/items/coal_ore.png"
+        },
+        "radiant:iron_ore": {
+            "textures": "textures/items/iron_ore.png"
+        },
+        "radiant:copper_ore": {
+            "textures": "textures/items/copper_ore.png"
+        },
+        "radiant:gold_ore": {
+            "textures": "textures/items/gold_ore.png"
+        },
+        "radiant:lapis_ore": {
+            "textures": "textures/items/lapis_ore.png"
+        },
+        "radiant:redstone_ore": {
+            "textures": "textures/items/redstone_ore.png"
+        },
+        "radiant:diamond_ore": {
+            "textures": "textures/items/diamond_ore.png"
+        },
+        "radiant:netherrack": {
+            "textures": "textures/items/netherrack.png"
+        },
+        "radiant:quartz_ore": {
+            "textures": "textures/items/quartz_ore.png"
+        },
+        "radiant:ancient_debris": {
+            "textures": "textures/items/ancient_debris.png"
+        },
+        "radiant:emerald_ore": {
+            "textures": "textures/items/emerald_ore.png"
+        },
+        "radiant:end_stone": {
+            "textures": "textures/items/end_stone.png"
+        },
+        "radiant:obsdian": {
+            "textures": "textures/items/obsidian.png"
+        },
+        "radiant:iron_block": {
+            "textures": "textures/items/iron_block.png"
+        },
+        "radiant:gold_block": {
+            "textures": "textures/items/gold_block.png"
+        },
+        "radiant:lapis_block": {
+            "textures": "textures/items/lapis_block.png"
+        },
+        "radiant:redstone_block": {
+            "textures": "textures/items/redstone_block.png"
+        },
+        "radiant:diamond_block": {
+            "textures": "textures/items/diamond_block.png"
+        },
+        "radiant:emerald_block": {
+            "textures": "textures/items/emerald_block.png"
+        },
+        "radiant:netherite_block": {
+            "textures": "textures/items/netherite_block.png"
+        }
+    }
+}
