@@ -38,7 +38,7 @@
         "radiant:end_stone": {
             "textures": "textures/items/end_stone.png"
         },
-        "radiant:obsdian": {
+        "radiant:obsidian": {
             "textures": "textures/items/obsidian.png"
         },
         "radiant:iron_block": {
