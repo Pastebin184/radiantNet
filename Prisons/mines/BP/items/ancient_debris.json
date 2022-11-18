@@ -1,0 +1,17 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "radiant:ancient_debris",
+            "category": "items"
+        },
+        "components": {
+            "minecraft:max_stack_size": 64,
+            "minecraft:hand_equipped": false,
+            "minecraft:foil": false,
+            "minecraft:icon": { "texture": "radiant:ancient_debris" },
+            "minecraft:display_name": { "value": "Mine J (Level 200+ Prestige 1)" }
+        },
+        "events": {}
+    }
+}

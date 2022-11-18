@@ -1,0 +1,17 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "radiant:quartz_ore",
+            "category": "items"
+        },
+        "components": {
+            "minecraft:max_stack_size": 64,
+            "minecraft:hand_equipped": false,
+            "minecraft:foil": false,
+            "minecraft:icon": { "texture": "radiant:quartz_ore" },
+            "minecraft:display_name": { "value": "Mine I (Level 150+ Prestige 1)" }
+        },
+        "events": {}
+    }
+}
