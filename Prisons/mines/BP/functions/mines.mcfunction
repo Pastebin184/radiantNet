@@ -1,0 +1,21 @@
+execute as @a if score @s levels matches 0.. if score @s prestige matches 0.. run tag @s add mineA
+execute as @a if score @s levels matches 25.. if score @s prestige matches 0.. run tag @s add mineB
+execute as @a if score @s levels matches 50.. if score @s prestige matches 0.. run tag @s add mineC
+execute as @a if score @s levels matches 100.. if score @s prestige matches 0.. run tag @s add mineD
+execute as @a if score @s levels matches 150.. if score @s prestige matches 0.. run tag @s add mineE
+execute as @a if score @s levels matches 200.. if score @s prestige matches 0.. run tag @s add mineF
+execute as @a if score @s levels matches 250.. if score @s prestige matches 0.. run tag @s add mineG
+execute as @a if score @s levels matches 50.. if score @s prestige matches 1.. run tag @s add mineH
+execute as @a if score @s levels matches 150.. if score @s prestige matches 1.. run tag @s add mineI
+execute as @a if score @s levels matches 200.. if score @s prestige matches 1.. run tag @s add mineJ
+execute as @a if score @s levels matches 50.. if score @s prestige matches 2.. run tag @s add mineK
+execute as @a if score @s levels matches 150.. if score @s prestige matches 2.. run tag @s add mineL
+execute as @a if score @s levels matches 200.. if score @s prestige matches 2.. run tag @s add mineM
+execute as @a if score @s levels matches 0.. if score @s prestige matches 3.. run tag @s add mineN
+execute as @a if score @s levels matches 125.. if score @s prestige matches 3.. run tag @s add mineO
+execute as @a if score @s levels matches 0.. if score @s prestige matches 4.. run tag @s add mineP
+execute as @a if score @s levels matches 125.. if score @s prestige matches 4.. run tag @s add mineQ
+execute as @a if score @s levels matches 0.. if score @s prestige matches 6.. run tag @s add mineR
+execute as @a if score @s levels matches 0.. if score @s prestige matches 8.. run tag @s add mineS
+execute as @a if score @s levels matches 0.. if score @s prestige matches 10.. run tag @s add mineT
+
