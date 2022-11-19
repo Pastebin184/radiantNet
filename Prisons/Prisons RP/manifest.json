@@ -1,9 +1,9 @@
 {
 	"format_version": 2,
 	"header": {
-		"name": "Radiant Network Mines RP",
+		"name": "Radiant Prisons RP",
 		"uuid": "c4b32e1a-86b7-487c-9532-cdefca0173de",
-		"description": "Mine Resources Radiant Network\nBy raptor#4545",
+		"description": "Resources For Radiant Prisons",
 		"version": [1, 1, 0],
 		"min_engine_version": [1, 19, 41]
 	},
@@ -16,7 +16,7 @@
 	],
     "metadata": {
 		"authors": [
-		  "raptor#4545"
+		  "Pastebin#8616, raptor#4545"
 		],
 		"url": "http://radiantnet.xyz"
 	}

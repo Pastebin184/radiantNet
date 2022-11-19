@@ -1,8 +1,8 @@
 {
     "format_version": 2,
     "header": {
-        "name": "Radiant Chat Ranks",
-        "description": "Custom pack for Radiant Network",
+        "name": "Radiant Prisons BP",
+        "description": "Behaviors for Radiant Prisons",
         "uuid": "6336ca90-70d8-4edd-b178-5bc2a2febfea",
         "version": [
             1,
@@ -35,7 +35,7 @@
     ],
     "metadata": {
         "authors": [
-            "Pastebin#8616"
+            "Pastebin#8616, raptor#4545"
         ],
         "url": "http://radiantnet.xyz"
     },
