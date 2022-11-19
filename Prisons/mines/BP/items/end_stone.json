@@ -2,7 +2,7 @@
     "format_version": "1.16.100",
     "minecraft:item": {
         "description": {
-            "identifier": "radiant:end_stone.json",
+            "identifier": "radiant:end_stone",
             "category": "items"
         },
         "components": {
