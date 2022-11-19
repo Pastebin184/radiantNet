@@ -10,7 +10,7 @@
                 "controller.render.skeleton"
             ],
             "textures": {
-                "default": "textures/entity/blocks.png"
+                "default": "textures/entity/mines.png"
             },
             "materials": {
                 "default": "npc"
