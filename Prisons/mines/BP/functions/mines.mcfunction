@@ -19,3 +19,44 @@ execute as @a if score @s levels matches 0.. if score @s prestige matches 6.. ru
 execute as @a if score @s levels matches 0.. if score @s prestige matches 8.. run tag @s add mineS
 execute as @a if score @s levels matches 0.. if score @s prestige matches 10.. run tag @s add mineT
 
+execute as @a[hasitem={item=radiant:coal_ore}, tag=mineA] run tp @p 240 75 -421
+execute as @a[hasitem={item=radiant:copper_ore}, tag=mineB] run tp @p 240 75 -338
+execute as @a[hasitem={item=radiant:iron_ore}, tag=mineC] run tp @p 167 75 -252
+execute as @a[hasitem={item=radiant:gold_ore}, tag=mineD] run tp @p 156 74 -342
+execute as @a[hasitem={item=radiant:lapis_ore}, tag=mineE] run tp @p 17 75 -205
+execute as @a[hasitem={item=radiant:redstone_ore}, tag=mineF] run tp @p 1 75 -321
+execute as @a[hasitem={item=radiant:diamond_ore}, tag=mineG] run tp @p 11 74 -418
+execute as @a[hasitem={item=radiant:netherrack}, tag=mineH] run tp @p 12 74 -516
+execute as @a[hasitem={item=radiant:quartz_ore}, tag=mineI] run tp @p 30 74 -598
+execute as @a[hasitem={item=radiant:ancient_debris}, tag=mineJ] run tp @p 38 74 -688
+execute as @a[hasitem={item=radiant:emerald_ore}, tag=mineK] run tp @p 38 73 -775
+execute as @a[hasitem={item=radiant:end_stone}, tag=mineL] run tp @p 30 80 -865
+execute as @a[hasitem={item=radiant:obsidian}, tag=mineM] run tp @p 60 77 -947
+execute as @a[hasitem={item=radiant:iron_block}, tag=mineN] run tp @p 28 82 -1053
+execute as @a[hasitem={item=radiant:gold_block}, tag=mineO] run tp @p 142 81 -1065
+execute as @a[hasitem={item=radiant:lapis_block}, tag=mineP] run tp @p 133 76 -948
+execute as @a[hasitem={item=radiant:redstone_block}, tag=mineQ] run tp @p 141 79 -907
+execute as @a[hasitem={item=radiant:diamond_block}, tag=mineR] run tp @p 143 73 -821
+execute as @a[hasitem={item=radiant:emerald_block}, tag=mineS] run tp @p 162 74 -716
+execute as @a[hasitem={item=radiant:netherite_block}, tag=mineT] run tp @p 261 77 -664
+
+execute as @a[hasitem={item=radiant:coal_ore}] run clear @s radiant:coal_ore
+execute as @a[hasitem={item=radiant:copper_ore}] run clear @s radiant:copper_ore
+execute as @a[hasitem={item=radiant:iron_ore}] run clear @s radiant:iron_ore
+execute as @a[hasitem={item=radiant:gold_ore}] run clear @s radiant:gold_ore
+execute as @a[hasitem={item=radiant:lapis_ore}] run clear @s radiant:lapis_ore
+execute as @a[hasitem={item=radiant:redstone_ore}] run clear @s radiant:redstone_ore
+execute as @a[hasitem={item=radiant:diamond_ore}] run clear @s radiant:diamond_ore
+execute as @a[hasitem={item=radiant:netherrack}] run clear @s radiant:netherrack
+execute as @a[hasitem={item=radiant:quartz_ore}] run clear @s radiant:quartz_ore
+execute as @a[hasitem={item=radiant:ancient_debris}] run clear @s radiant:ancient_debris
+execute as @a[hasitem={item=radiant:emerald_ore}] run clear @s radiant:emerald_ore
+execute as @a[hasitem={item=radiant:end_stone}] run clear @s radiant:end_stone
+execute as @a[hasitem={item=radiant:obsidian}] run clear @s radiant:obsidian
+execute as @a[hasitem={item=radiant:iron_block}] run clear @s radiant:iron_block
+execute as @a[hasitem={item=radiant:gold_block}] run clear @s radiant:gold_block
+execute as @a[hasitem={item=radiant:lapis_block}] run clear @s radiant:lapis_block
+execute as @a[hasitem={item=radiant:redstone_block}] run clear @s radiant:redstone_block
+execute as @a[hasitem={item=radiant:diamond_block}] run clear @s radiant:diamond_block
+execute as @a[hasitem={item=radiant:emerald_block}] run clear @s radiant:emerald_block
+execute as @a[hasitem={item=radiant:netherite_block}] run clear @s radiant:netherite_block
