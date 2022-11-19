@@ -61,6 +61,24 @@
         },
         "radiant:netherite_block": {
             "textures": "textures/items/netherite_block.png"
+        },
+        "radiant:wood_pickaxe": {
+            "textures": "textures/items/wood_pickaxe.png"
+        },
+        "radiant:stone_pickaxe": {
+            "textures": "textures/items/stone_pickaxe.png"
+        },
+        "radiant:iron_pickaxe": {
+            "textures": "textures/items/iron_pickaxe.png"
+        },
+        "radiant:gold_pickaxe": {
+            "textures": "textures/items/gold_pickaxe.png"
+        },
+        "radiant:diamond_pickaxe": {
+            "textures": "textures/items/diamond_pickaxe.png"
+        },
+        "radiant:netherite_pickaxe": {
+            "textures": "textures/items/netherite_pickaxe.png"
         }
     }
 }

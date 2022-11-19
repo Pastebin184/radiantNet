@@ -2,7 +2,7 @@
     "format_version": "1.16.100",
     "minecraft:client_entity": {
         "description": {
-            "identifier": "radiant:mines",
+            "identifier": "radiant:shop",
             "geometry": {
                 "default": "geometry.npc"
             },
@@ -10,7 +10,7 @@
                 "controller.render.skeleton"
             ],
             "textures": {
-                "default": "textures/entity/blocks.png"
+                "default": "textures/entity/shop.png"
             },
             "materials": {
                 "default": "npc"
