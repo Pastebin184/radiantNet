@@ -99,7 +99,7 @@
             "textures": "textures/items/leather_chestplate.png"
         },
         "radiant:gold_chestplate": {
-            "textures": "textures/items/chestplate.png"
+            "textures": "textures/items/gold_chestplate.png"
         },
         "radiant:chainmail_chestplate": {
             "textures": "textures/items/chainmail_chestplate.png"
