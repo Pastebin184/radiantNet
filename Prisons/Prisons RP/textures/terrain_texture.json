@@ -5,7 +5,7 @@
     "num_mip_levels": 4,
     "texture_data": {
         "kothblock": {
-            "textures": "textures/blocks/kothblock.png"
+            "textures": "textures/blocks/kothblock"
         }
     }
 }
