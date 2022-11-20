@@ -98,3 +98,4 @@ execute as @a[hasitem={item=radiant:netherite_chestplate}] run clear @s radiant:
 clear @a radiant:filler
 
 execute as @a[hasitem=radiant:prestige] run function prestige/prestige
+execute as @a[hasitem=radiant:prestige] run clear @s radiant:prestige
