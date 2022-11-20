@@ -44,10 +44,10 @@ execute as @a[hasitem={item=radiant:leather_chestplate}] if score @s money match
 execute as @a[hasitem={item=radiant:leather_chestplate}] if score @s money matches 0.. run scoreboard players remove @s money 0
 execute as @a[hasitem={item=radiant:leather_chestplate}] run clear @s radiant:leather_chestplate
 
-execute as @a[hasitem={item=radiant:gold_chestplate}] if score @s money matches 100.. run give @s gold_helmet 1 0
-execute as @a[hasitem={item=radiant:gold_chestplate}] if score @s money matches 100.. run give @s gold_chestplate 1 0
-execute as @a[hasitem={item=radiant:gold_chestplate}] if score @s money matches 100.. run give @s gold_leggings 1 0
-execute as @a[hasitem={item=radiant:gold_chestplate}] if score @s money matches 100.. run give @s gold_boots 1 0
+execute as @a[hasitem={item=radiant:gold_chestplate}] if score @s money matches 100.. run give @s golden_helmet 1 0
+execute as @a[hasitem={item=radiant:gold_chestplate}] if score @s money matches 100.. run give @s golden_chestplate 1 0
+execute as @a[hasitem={item=radiant:gold_chestplate}] if score @s money matches 100.. run give @s golden_leggings 1 0
+execute as @a[hasitem={item=radiant:gold_chestplate}] if score @s money matches 100.. run give @s golden_boots 1 0
 execute as @a[hasitem={item=radiant:gold_chestplate}] if score @s money matches 100.. run scoreboard players remove @s money 100
 execute as @a[hasitem={item=radiant:gold_chestplate}] run clear @s radiant:gold_chestplate
 
