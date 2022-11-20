@@ -1,5 +1,5 @@
 {
     "values": [
-        "levels/runall", "mines/mines","shop/shop","misc/gamerules"
+        "levels/runall", "mines/mines","shop/shop","misc/gamerules","mics/scores"
     ]
   }
