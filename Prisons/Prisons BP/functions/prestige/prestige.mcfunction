@@ -4,3 +4,4 @@ execute as @s if score @s money matches 100000.. if score @s level matches 250 r
 execute as @s if score @s money matches 100000.. if score @s level matches 250 run scoreboard players set @p money 0
 execute as @s if score @s money matches 100000.. if score @s level matches 250 run scoreboard players set @p xp 0
 execute as @s if score @s money matches 100000.. if score @s level matches 250 run scoreboard players set @p level 0
+execute as @s if score @s money matches 100000.. if score @s level matches 250 run tellraw @p {"rawtext":[{"text":"§aSuccesfully Prestiged"}]}

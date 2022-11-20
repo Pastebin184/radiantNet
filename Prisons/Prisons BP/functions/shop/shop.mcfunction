@@ -96,3 +96,5 @@ execute as @a[hasitem={item=radiant:netherite_chestplate}] if score @s money mat
 execute as @a[hasitem={item=radiant:netherite_chestplate}] run clear @s radiant:netherite_chestplate
 
 clear @a radiant:filler
+
+execute as @a[hasitem=radiant:prestige] run function prestige/prestige
