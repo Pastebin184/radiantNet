@@ -10,7 +10,7 @@
             "minecraft:hand_equipped": false,
             "minecraft:foil": false,
             "minecraft:icon": { "texture": "radiant:filler" },
-            "minecraft:display_name": { "value": "" }
+            "minecraft:display_name": { "value": " " }
         },
         "events": {}
     }
