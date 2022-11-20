@@ -79,6 +79,42 @@
         },
         "radiant:netherite_pickaxe": {
             "textures": "textures/items/netherite_pickaxe.png"
+        },
+        "radiant:wood_sword": {
+            "textures": "textures/items/wood_sword.png"
+        },
+        "radiant:stone_sword": {
+            "textures": "textures/items/stone_sword.png"
+        },
+        "radiant:iron_sword": {
+            "textures": "textures/items/iron_sword.png"
+        },
+        "radiant:diamond_sword": {
+            "textures": "textures/items/diamond_sword.png"
+        },
+        "radiant:netherite_sword": {
+            "textures": "textures/items/netherite_sword.png"
+        },
+        "radiant:leather_chestplate": {
+            "textures": "textures/items/leather_chestplate.png"
+        },
+        "radiant:gold_chestplate": {
+            "textures": "textures/items/chestplate.png"
+        },
+        "radiant:chainmail_chestplate": {
+            "textures": "textures/items/chainmail_chestplate.png"
+        },
+        "radiant:iron_chestplate": {
+            "textures": "textures/items/iron_chestplate.png"
+        },
+        "radiant:diamond_chestplate": {
+            "textures": "textures/items/diamond_chestplate.png"
+        },
+        "radiant:netherite_chestplate": {
+            "textures": "textures/items/netherite_chestplate.png"
+        },
+        "radiant:filler": {
+            "textures": "textures/items/glass_light_blue.png"
         }
     }
 }
