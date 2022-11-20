@@ -37,11 +37,11 @@ execute as @a[hasitem={item=radiant:netherite_sword}] if score @s money matches 
 execute as @a[hasitem={item=radiant:netherite_sword}] if score @s money matches 125000.. run scoreboard players remove @s money 125000
 execute as @a[hasitem={item=radiant:netherite_sword}] run clear @s radiant:netherite_sword
 
-execute as @a[hasitem={item=radiant:leather_chestplate}] if score @s money matches 0.. run give @s leather_helmet 1 0
-execute as @a[hasitem={item=radiant:leather_chestplate}] if score @s money matches 0.. run give @s leather_chestplate 1 0
-execute as @a[hasitem={item=radiant:leather_chestplate}] if score @s money matches 0.. run give @s leather_leggings 1 0
-execute as @a[hasitem={item=radiant:leather_chestplate}] if score @s money matches 0.. run give @s leather_boots 1 0
-execute as @a[hasitem={item=radiant:leather_chestplate}] if score @s money matches 0.. run scoreboard players remove @s money 0
+execute as @a[hasitem={item=radiant:leather_chestplate}] if score @s money matches 100.. run give @s leather_helmet 1 0
+execute as @a[hasitem={item=radiant:leather_chestplate}] if score @s money matches 100.. run give @s leather_chestplate 1 0
+execute as @a[hasitem={item=radiant:leather_chestplate}] if score @s money matches 100.. run give @s leather_leggings 1 0
+execute as @a[hasitem={item=radiant:leather_chestplate}] if score @s money matches 100.. run give @s leather_boots 1 0
+execute as @a[hasitem={item=radiant:leather_chestplate}] if score @s money matches 100.. run scoreboard players remove @s money 0
 execute as @a[hasitem={item=radiant:leather_chestplate}] run clear @s radiant:leather_chestplate
 
 execute as @a[hasitem={item=radiant:gold_chestplate}] if score @s money matches 100.. run give @s golden_helmet 1 0
