@@ -2,7 +2,7 @@
     "format_version": "1.16.100",
     "minecraft:item": {
         "description": {
-            "identifier": "radiant:common_crate",
+            "identifier": "radiant:rare_crate",
             "category": "items"
         },
         "components": {
@@ -10,7 +10,7 @@
             "minecraft:hand_equipped": true,
             "minecraft:foil": true,
             "minecraft:icon": { "texture": "paper" },
-            "minecraft:display_name": { "value": "§l§fCommon Crate" },
+            "minecraft:display_name": { "value": "§l§9Rare Crate" },
             "minecraft:creative_category": {
                 "parent": "itemGroup.name.sword"
             },
@@ -24,7 +24,7 @@
             "open": {
                 "run_command": {
                     "command": [
-                        "function crates/common"
+                        "function crates/rare"
                     ]
                 }
             }
