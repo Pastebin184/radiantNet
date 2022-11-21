@@ -117,7 +117,7 @@
             "textures": "textures/items/glass_light_blue.png"
         },
         "radiant:glowing_obsidian": {
-            "textures": "textures/item/glowing_obsidian.png"
+            "textures": "textures/items/glowing_obsidian.png"
         }
     }
 }
