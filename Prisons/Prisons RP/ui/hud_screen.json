@@ -1,0 +1,120 @@
+//  By Sanji#8518
+
+{
+  "hud_title_text": {
+    "type": "panel",
+    "size": ["100%cm", "100%c"],
+    "anchor_from": "right_middle",
+    "anchor_to": "right_middle",
+    "alpha": 1,
+    "controls": [
+      {
+        "sidebar": {
+          "type": "panel",
+          "size": ["100%c", "100%c"],
+          "offset": [0, 25],
+          "controls": [
+            {
+              "title_background": {
+                "type": "image",
+                "alpha": 1,
+                "size": [105, 176],
+                //this is where the sidebar goes on screen
+                "offset": [0,0],
+                //Background Texture for the sidebar
+                "texture": "textures/ui/title_background",
+                "controls": [
+                  {
+                    "sidebarlogo": {
+                      "type": "image",
+                      //Logo Texture
+                      "texture": "textures/ui/sidebar_logo",
+                      "anchor_from": "top_middle",
+                      "anchor_to": "top_middle",
+                      //Size of the logo
+                      "size": [80,62.5],
+                      //This is where the logo goes on screen
+                      "offset": [0, 0.25],
+                      "layer": 50,
+                      "alpha": 2
+                    }
+                  },
+                  {//title text
+                    "title": {
+                      "size":[150,159],
+                      "font_type":"Ariel",
+                      "type": "label",
+                      "text": "$title_text",
+                      "anchor_from": "bottom_middle",
+                      "anchor_to": "bottom_middle",
+                      "color": "$tool_tip_text",
+                      "text_alignment": "left",
+                      //This is where the text goes on screen
+                      "offset": [26,27],
+                      "layer": 1,
+                      //Shadow Under Text. turn false if you want to remove it
+                      "shadow": true,
+                      "localize": false,
+                      "font_scale_factor": 1,
+                      "alpha": 2
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }, //actionbar
+  "hud_actionbar_text": {
+    "type": "panel",
+    "size": ["100%cm", "100%c"],
+    "anchor_from": "left_middle",
+    "anchor_to": "left_middle",
+    "alpha": 1,
+    "controls": [
+      {
+        "sidesidebar": {
+          "type": "panel",
+          "size": ["100%c", "100%c"],
+          "offset": [0, 25],
+          "controls": [
+            {
+              "actionbar_background": {
+                "type": "image",
+                "alpha": 1,
+                "size": [100, 66],
+                //this is where the actionbar goes on screen
+                "offset": [0,17],
+                //actionbar picture
+                "texture": "textures/ui/actionbar_background",
+                "controls": [
+            {
+                    "actionbar": {
+                      "size": [100,80],
+                      "font_type":"Ariel",
+                      "type": "label",
+                      //Shadow Under Text. turn false if you want to remove it
+                      "shadow": true,
+                      "text": "$actionbar_text",
+                      "anchor_from": "left_middle",
+                      "anchor_to": "left_middle",
+                      "color": "$tool_tip_text",
+                      "text_alignment": "left",
+                      //this is where the actionbar text goes on screen
+                      "offset": [2,0],
+                      "layer": 1,
+                      "localize": false,
+                      "font_scale_factor": 1,
+                      "alpha": 2
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }}
