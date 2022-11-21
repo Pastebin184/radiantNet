@@ -4,3 +4,4 @@ scoreboard players add @a gems 0
 scoreboard players add @a xp 0
 scoreboard players add @a levels 0
 scoreboard players add @a prestige 0
+scoreboard players add @a level 0

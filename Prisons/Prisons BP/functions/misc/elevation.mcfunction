@@ -1,0 +1,1 @@
+execute as @a[y=20,dy=-20] run tp @s 86 65 91
