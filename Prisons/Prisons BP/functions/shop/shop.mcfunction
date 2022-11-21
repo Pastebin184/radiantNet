@@ -97,8 +97,8 @@ execute as @a[hasitem={item=radiant:netherite_chestplate}] run clear @s radiant:
 
 clear @a radiant:filler
 
-execute as @a[hasitem=radiant:prestige] run function prestige/prestige
-execute as @a[hasitem=radiant:prestige] run clear @s radiant:prestige
+execute as @a[hasitem={item=radiant:prestige}] run function prestige/prestige
+execute as @a[hasitem={item=radiant:prestige}] run clear @s radiant:prestige
 
 execute as @a[hasitem={item=radiant:common_crate_shop}] if score @s money matches 450.. run give @s radiant:common_crate 1 0
 execute as @a[hasitem={item=radiant:common_crate_shop}] if score @s money matches 450.. run tellraw @s {"rawtext": [{"text": "§l§aPurchase Succeeded!"}]}
