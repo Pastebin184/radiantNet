@@ -97,5 +97,20 @@ execute as @a[hasitem={item=radiant:netherite_chestplate}] run clear @s radiant:
 
 clear @a radiant:filler
 
-execute as @a[hasitem=radiant:prestige] run function prestige/prestige
-execute as @a[hasitem=radiant:prestige] run clear @s radiant:prestige
+execute as @a[hasitem={item=radiant:prestige}] run function prestige/prestige
+execute as @a[hasitem={item=radiant:prestige}] run clear @s radiant:prestige
+
+execute as @a[hasitem={item=radiant:common_crate_shop}] if score @s money matches 450.. run give @s radiant:common_crate 1 0
+execute as @a[hasitem={item=radiant:common_crate_shop}] if score @s money matches 450.. run tellraw @s {"rawtext": [{"text": "§l§aPurchase Succeeded!"}]}
+execute as @a[hasitem={item=radiant:common_crate_shop}] if score @s money matches 450.. run scoreboard players remove @s money 450
+execute as @a[hasitem={item=radiant:common_crate_shop}] run clear @s radiant:common_crate_shop
+
+execute as @a[hasitem={item=radiant:rare_crate_shop}] if score @s money matches 900.. run give @s radiant:rare_crate 1 0
+execute as @a[hasitem={item=radiant:rare_crate_shop}] if score @s money matches 900.. run tellraw @s {"rawtext": [{"text": "§l§aPurchase Succeeded!"}]}
+execute as @a[hasitem={item=radiant:rare_crate_shop}] if score @s money matches 900.. run scoreboard players remove @s money 900
+execute as @a[hasitem={item=radiant:rare_crate_shop}] run clear @s radiant:rare_crate_shop
+
+execute as @a[hasitem={item=radiant:legendary_crate_shop}] if score @s money matches 2000.. run give @s radiant:legendary_crate 1 0
+execute as @a[hasitem={item=radiant:legendary_crate_shop}] if score @s money matches 2000.. run tellraw @s {"rawtext": [{"text": "§l§aPurchase Succeeded!"}]}
+execute as @a[hasitem={item=radiant:legendary_crate_shop}] if score @s money matches 2000.. run scoreboard players remove @s money 2000
+execute as @a[hasitem={item=radiant:legendary_crate_shop}] run clear @s radiant:legendary_crate_shop
