@@ -1,0 +1,33 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "radiant:season1_crate",
+            "category": "items"
+        },
+        "components": {
+            "minecraft:max_stack_size": 64,
+            "minecraft:hand_equipped": true,
+            "minecraft:foil": true,
+            "minecraft:icon": { "texture": "paper" },
+            "minecraft:display_name": { "value": "§l§5Season 1 Crate" },
+            "minecraft:creative_category": {
+                "parent": "itemGroup.name.sword"
+            },
+            "minecraft:on_use":{
+                "on_use": {
+                    "event": "open"
+                }
+            }
+        },
+        "events": {
+            "open": {
+                "run_command": {
+                    "command": [
+                        "function crates/season1_crate"
+                    ]
+                }
+            }
+        }
+    }
+}
