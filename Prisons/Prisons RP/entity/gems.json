@@ -1,0 +1,20 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "radiant:fragment",
+            "geometry": {
+                "default": "geometry.npc"
+            },
+            "render_controllers": [
+                "controller.render.skeleton"
+            ],
+            "textures": {
+                "default": "textures/entity/gems.png"
+            },
+            "materials": {
+                "default": "npc"
+            }
+        }
+    }
+}

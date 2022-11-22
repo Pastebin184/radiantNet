@@ -10,7 +10,7 @@
             "minecraft:hand_equipped": false,
             "minecraft:foil": false,
             "minecraft:icon": { "texture": "paper" },
-            "minecraft:display_name": { "value": "Radiant Crate(8,500F)" }
+            "minecraft:display_name": { "value": "Radiant Crate§d§l(25,500F)" }
         },
         "events": {}
     }

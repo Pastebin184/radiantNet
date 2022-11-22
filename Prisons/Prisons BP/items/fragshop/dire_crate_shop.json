@@ -10,7 +10,7 @@
             "minecraft:hand_equipped": false,
             "minecraft:foil": false,
             "minecraft:icon": { "texture": "paper" },
-            "minecraft:display_name": { "value": "Dire Crate(3,500F)" }
+            "minecraft:display_name": { "value": "Dire Crate§d§l(10,500F)" }
         },
         "events": {}
     }

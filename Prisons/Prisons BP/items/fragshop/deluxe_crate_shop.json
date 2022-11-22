@@ -10,7 +10,7 @@
             "minecraft:hand_equipped": false,
             "minecraft:foil": false,
             "minecraft:icon": { "texture": "paper" },
-            "minecraft:display_name": { "value": "Deluxe Crate(2,000F" }
+            "minecraft:display_name": { "value": "Deluxe Crate§d§l(2,500F)" }
         },
         "events": {}
     }

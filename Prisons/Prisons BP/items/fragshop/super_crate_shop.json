@@ -10,7 +10,7 @@
             "minecraft:hand_equipped": false,
             "minecraft:foil": false,
             "minecraft:icon": { "texture": "paper" },
-            "minecraft:display_name": { "value": "Super Crate(1,000F)" }
+            "minecraft:display_name": { "value": "Super Crate§d§l(1,850F)" }
         },
         "events": {}
     }
