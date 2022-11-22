@@ -2,7 +2,7 @@
     "format_version": "1.16.100",
     "minecraft:item": {
         "description": {
-            "identifier": "filler_crate_shop",
+            "identifier": "radiant:filler_crate_shop",
             "category": "items"
         },
         "components": {
