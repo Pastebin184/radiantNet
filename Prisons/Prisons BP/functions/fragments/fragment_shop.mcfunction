@@ -1,6 +1,6 @@
 replaceitem entity @e[type=radiant:fragment] slot.inventory 0 radiant:filler 1 0
 replaceitem entity @e[type=radiant:fragment] slot.inventory 1 radiant:filler 1 0
-replaceitem entity @e[type=radiant:fragment] slot.inventory 2 rradiant:filler 1 0
+replaceitem entity @e[type=radiant:fragment] slot.inventory 2 radiant:filler 1 0
 replaceitem entity @e[type=radiant:fragment] slot.inventory 3 radiant:filler 1 0
 replaceitem entity @e[type=radiant:fragment] slot.inventory 4 radiant:filler 1 0
 replaceitem entity @e[type=radiant:fragment] slot.inventory 5 radiant:filler 1 0
