@@ -2,7 +2,7 @@
     "format_version": "1.16.100",
     "minecraft:item": {
         "description": {
-            "identifier": "radiant:men6",
+            "identifier": "radiant:men5",
             "category": "items"
         },
         "components": {
@@ -10,7 +10,7 @@
             "minecraft:hand_equipped": true,
             "minecraft:foil": true,
             "minecraft:icon": { "texture": "book_enchanted" },
-            "minecraft:display_name": { "value": "Mending (12000B)" },
+            "minecraft:display_name": { "value": "Mending V (12000B)" },
             "minecraft:creative_category": {
                 "parent": "itemGroup.name.sword"
             }
