@@ -52,23 +52,23 @@ execute as @a[hasitem={item=radiant:leather_chestplate}] if score @s money match
 execute as @a[hasitem={item=radiant:leather_chestplate}] if score @s money matches 100.. run give @s leather_leggings 1 0
 execute as @a[hasitem={item=radiant:leather_chestplate}] if score @s money matches 100.. run give @s leather_boots 1 0
 execute as @a[hasitem={item=radiant:leather_chestplate}] if score @s money matches 100.. run tellraw @s {"rawtext": [{"text": "§l§aPurchase Succeeded!"}]}
-execute as @a[hasitem={item=radiant:leather_chestplate}] if score @s money matches 100.. run scoreboard players remove @s money 0
+execute as @a[hasitem={item=radiant:leather_chestplate}] if score @s money matches 100.. run scoreboard players remove @s money 100
 execute as @a[hasitem={item=radiant:leather_chestplate}] run clear @s radiant:leather_chestplate
 
-execute as @a[hasitem={item=radiant:gold_chestplate}] if score @s money matches 100.. run give @s golden_helmet 1 0
-execute as @a[hasitem={item=radiant:gold_chestplate}] if score @s money matches 100.. run give @s golden_chestplate 1 0
-execute as @a[hasitem={item=radiant:gold_chestplate}] if score @s money matches 100.. run give @s golden_leggings 1 0
-execute as @a[hasitem={item=radiant:gold_chestplate}] if score @s money matches 100.. run give @s golden_boots 1 0
-execute as @a[hasitem={item=radiant:gold_chestplate}] if score @s money matches 100.. run tellraw @s {"rawtext": [{"text": "§l§aPurchase Succeeded!"}]}
-execute as @a[hasitem={item=radiant:gold_chestplate}] if score @s money matches 100.. run scoreboard players remove @s money 100
+execute as @a[hasitem={item=radiant:gold_chestplate}] if score @s money matches 1000.. run give @s golden_helmet 1 0
+execute as @a[hasitem={item=radiant:gold_chestplate}] if score @s money matches 1000.. run give @s golden_chestplate 1 0
+execute as @a[hasitem={item=radiant:gold_chestplate}] if score @s money matches 1000.. run give @s golden_leggings 1 0
+execute as @a[hasitem={item=radiant:gold_chestplate}] if score @s money matches 1000.. run give @s golden_boots 1 0
+execute as @a[hasitem={item=radiant:gold_chestplate}] if score @s money matches 1000.. run tellraw @s {"rawtext": [{"text": "§l§aPurchase Succeeded!"}]}
+execute as @a[hasitem={item=radiant:gold_chestplate}] if score @s money matches 1000.. run scoreboard players remove @s money 1000
 execute as @a[hasitem={item=radiant:gold_chestplate}] run clear @s radiant:gold_chestplate
 
-execute as @a[hasitem={item=radiant:chainmail_chestplate}] if score @s money matches 200.. run give @s chainmail_helmet 1 0
-execute as @a[hasitem={item=radiant:chainmail_chestplate}] if score @s money matches 200.. run give @s chainmail_chestplate 1 0
-execute as @a[hasitem={item=radiant:chainmail_chestplate}] if score @s money matches 200.. run give @s chainmail_leggings 1 0
-execute as @a[hasitem={item=radiant:chainmail_chestplate}] if score @s money matches 200.. run give @s chainmail_boots 1 0
-execute as @a[hasitem={item=radiant:chainmail_chestplate}] if score @s money matches 200.. run tellraw @s {"rawtext": [{"text": "§l§aPurchase Succeeded!"}]}
-execute as @a[hasitem={item=radiant:chainmail_chestplate}] if score @s money matches 200.. run scoreboard players remove @s money 200
+execute as @a[hasitem={item=radiant:chainmail_chestplate}] if score @s money matches 2000.. run give @s chainmail_helmet 1 0
+execute as @a[hasitem={item=radiant:chainmail_chestplate}] if score @s money matches 2000.. run give @s chainmail_chestplate 1 0
+execute as @a[hasitem={item=radiant:chainmail_chestplate}] if score @s money matches 2000.. run give @s chainmail_leggings 1 0
+execute as @a[hasitem={item=radiant:chainmail_chestplate}] if score @s money matches 2000.. run give @s chainmail_boots 1 0
+execute as @a[hasitem={item=radiant:chainmail_chestplate}] if score @s money matches 2000.. run tellraw @s {"rawtext": [{"text": "§l§aPurchase Succeeded!"}]}
+execute as @a[hasitem={item=radiant:chainmail_chestplate}] if score @s money matches 2000.. run scoreboard players remove @s money 2000
 execute as @a[hasitem={item=radiant:chainmail_chestplate}] run clear @s radiant:chainmail_chestplate
 
 execute as @a[hasitem={item=radiant:iron_chestplate}] if score @s money matches 25000.. run give @s iron_helmet 1 0
