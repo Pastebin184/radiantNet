@@ -49,6 +49,12 @@ execute as @a[hasitem={item=radiant:men6}] if score @s beacons matches 20000.. r
 execute as @a[hasitem={item=radiant:men6}] if score @s beacons matches 20000.. run scoreboard players remove @s beacons 20000
 execute as @a[hasitem={item=radiant:men6}] run clear @s radiant:men6
 
+execute as @a[hasitem={item=radiant:men6}] if score @s beacons matches 45000.. run structure load men6 ~ ~1 ~ 
+execute as @a[hasitem={item=radiant:men6}] if score @s beacons matches 45000.. run tellraw @s {"rawtext": [{"text": "§l§aPurchase Succeeded!"}]}
+execute as @a[hasitem={item=radiant:men6}] if score @s beacons matches 45000.. run scoreboard players remove @s beacons 45000
+execute as @a[hasitem={item=radiant:men6}] run clear @s radiant:men7
+
+
 execute as @a[hasitem={item=radiant:sharp5}] if score @s beacons matches 4000.. run structure load sharp5 ~ ~1 ~ 
 execute as @a[hasitem={item=radiant:sharp5}] if score @s beacons matches 4000.. run tellraw @s {"rawtext": [{"text": "§l§aPurchase Succeeded!"}]}
 execute as @a[hasitem={item=radiant:sharp5}] if score @s beacons matches 4000.. run scoreboard players remove @s beacons 4000
@@ -75,10 +81,10 @@ execute as @a[hasitem={item=radiant:sharp9}] if score @s beacons matches 60000..
 execute as @a[hasitem={item=radiant:sharp9}] if score @s beacons matches 60000.. run scoreboard players remove @s beacons 60000
 execute as @a[hasitem={item=radiant:sharp9}] run clear @s radiant:sharp9
 
-execute as @a[hasitem={item=radiant:sharp9}] if score @s beacons matches 2500.. run scoreboard players add @s beaconmulti 1 
-execute as @a[hasitem={item=radiant:sharp9}] if score @s beacons matches 2500.. run tellraw @s {"rawtext": [{"text": "§l§aPurchase Succeeded!"}]}
-execute as @a[hasitem={item=radiant:sharp9}] if score @s beacons matches 2500.. run scoreboard players remove @s beacons 2500
-execute as @a[hasitem={item=radiant:sharp9}] run clear @s radiant:upgrade_beacon_multi
+execute as @a[hasitem={item=radiant:radiant:upgrade_beacon_multi}] if score @s beacons matches 2500.. run scoreboard players add @s beaconmulti 1 
+execute as @a[hasitem={item=radiant:radiant:upgrade_beacon_multi}] if score @s beacons matches 2500.. run tellraw @s {"rawtext": [{"text": "§l§aPurchase Succeeded!"}]}
+execute as @a[hasitem={item=radiant:radiant:upgrade_beacon_multi}] if score @s beacons matches 2500.. run scoreboard players remove @s beacons 2500
+execute as @a[hasitem={item=radiant:radiant:upgrade_beacon_multi}] run clear @s radiant:upgrade_beacon_multi
 
 
 
