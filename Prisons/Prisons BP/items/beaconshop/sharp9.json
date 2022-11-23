@@ -10,7 +10,7 @@
             "minecraft:hand_equipped": true,
             "minecraft:foil": true,
             "minecraft:icon": { "texture": "book_enchanted" },
-            "minecraft:display_name": { "value": "Sharpness IX (30000B)" },
+            "minecraft:display_name": { "value": "Sharpness IX (60000B)" },
             "minecraft:creative_category": {
                 "parent": "itemGroup.name.sword"
             }
