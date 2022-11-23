@@ -1,11 +1,11 @@
 execute as @a[hasitem={item=coal}] run scoreboard players add @s money 1
 execute as @a[hasitem={item=coal}] run scoreboard players add @s xp 1
 execute as @a run clear @a[hasitem={item=coal}] coal 0 1
-execute as @a[hasitem={item=raw_copper}] run scoreboard players add @s money 2
-execute as @a[hasitem={item=raw_copper}] run scoreboard players add @s xp 2
+execute as @a[hasitem={item=raw_copper}] run scoreboard players add @s money 1
+execute as @a[hasitem={item=raw_copper}] run scoreboard players add @s xp 1
 execute as @a run clear @a[hasitem={item=raw_copper}] raw_copper 0 1
 execute as @a[hasitem={item=raw_iron}] run scoreboard players add @s money 3
-execute as @a[hasitem={item=raw_iron}] run scoreboard players add @s xp 5
+execute as @a[hasitem={item=raw_iron}] run scoreboard players add @s xp 4
 execute as @a run clear @a[hasitem={item=raw_iron}] raw_iron 0 1
 execute as @a[hasitem={item=raw_gold}] run scoreboard players add @s money 4
 execute as @a[hasitem={item=raw_gold}] run scoreboard players add @s xp 8
