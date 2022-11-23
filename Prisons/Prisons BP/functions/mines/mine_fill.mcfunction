@@ -18,3 +18,4 @@ fill 155 78 -903 127 57 -875 redstone_block
 fill 158 72 -816 128 52 -786 diamond_block
 fill 158 73 -701 128 53 -731 emerald_block
 fill 277 76 -659 247 56 -629 netherite_block
+fill 247 74 -527 277 54 -557 lodestone
