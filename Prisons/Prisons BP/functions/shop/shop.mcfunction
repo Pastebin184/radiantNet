@@ -7,9 +7,9 @@ execute as @a[hasitem={item=radiant:stone_pickaxe}] if score @s money matches 10
 execute as @a[hasitem={item=radiant:stone_pickaxe}] if score @s money matches 100.. run scoreboard players remove @s money 100
 execute as @a[hasitem={item=radiant:stone_pickaxe}] run clear @s radiant:stone_pickaxe
 
-execute as @a[hasitem={item=radiant:iron_pickaxe}] if score @s money matches 25000.. run give @s iron_pickaxe 1 0 {"minecraft:can_destroy":{"blocks":["coal_ore","copper_ore","iron_ore","gold_ore","lapis_ore","redstone_ore","lit_redstone_ore","diamond_ore","netherrack","quartz_ore","ancient_debris","emerald_ore","end_stone","obsidian","iron_block","gold_block","lapis_block","redstone_block","diamond_block","emerald_block","netherite_block"]}}
-execute as @a[hasitem={item=radiant:iron_pickaxe}] if score @s money matches 25000.. run tellraw @s {"rawtext": [{"text": "§l§aPurchase Succeeded!"}]}
-execute as @a[hasitem={item=radiant:iron_pickaxe}] if score @s money matches 25000.. run scoreboard players remove @s money 25000
+execute as @a[hasitem={item=radiant:iron_pickaxe}] if score @s money matches 3000.. run give @s iron_pickaxe 1 0 {"minecraft:can_destroy":{"blocks":["coal_ore","copper_ore","iron_ore","gold_ore","lapis_ore","redstone_ore","lit_redstone_ore","diamond_ore","netherrack","quartz_ore","ancient_debris","emerald_ore","end_stone","obsidian","iron_block","gold_block","lapis_block","redstone_block","diamond_block","emerald_block","netherite_block"]}}
+execute as @a[hasitem={item=radiant:iron_pickaxe}] if score @s money matches 3000.. run tellraw @s {"rawtext": [{"text": "§l§aPurchase Succeeded!"}]}
+execute as @a[hasitem={item=radiant:iron_pickaxe}] if score @s money matches 3000.. run scoreboard players remove @s money 25000
 execute as @a[hasitem={item=radiant:iron_pickaxe}] run clear @s radiant:iron_pickaxe
 
 execute as @a[hasitem={item=radiant:diamond_pickaxe}] if score @s money matches 250000.. if score @s prestige matches 1.. run give @s diamond_pickaxe 1 0 {"minecraft:can_destroy":{"blocks":["coal_ore","copper_ore","iron_ore","gold_ore","lapis_ore","redstone_ore","lit_redstone_ore","diamond_ore","netherrack","quartz_ore","ancient_debris","emerald_ore","end_stone","obsidian","iron_block","gold_block","lapis_block","redstone_block","diamond_block","emerald_block","netherite_block"]}}

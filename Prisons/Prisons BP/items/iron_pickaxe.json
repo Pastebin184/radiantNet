@@ -10,7 +10,7 @@
             "minecraft:hand_equipped": false,
             "minecraft:foil": false,
             "minecraft:icon": { "texture": "radiant:iron_pickaxe" },
-            "minecraft:display_name": { "value": "Iron Pickaxe (25000$)" }
+            "minecraft:display_name": { "value": "Iron Pickaxe (3000$)" }
         },
         "events": {}
     }
