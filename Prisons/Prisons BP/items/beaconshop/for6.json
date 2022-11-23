@@ -1,0 +1,20 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "radiant:for6",
+            "category": "items"
+        },
+        "components": {
+            "minecraft:max_stack_size": 64,
+            "minecraft:hand_equipped": true,
+            "minecraft:foil": true,
+            "minecraft:icon": { "texture": "book_enchanted" },
+            "minecraft:display_name": { "value": "Fortune VI (30000B)" },
+            "minecraft:creative_category": {
+                "parent": "itemGroup.name.sword"
+            }
+        },
+        "events": {}
+    }
+}
