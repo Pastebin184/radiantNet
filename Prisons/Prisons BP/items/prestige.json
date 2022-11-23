@@ -10,7 +10,7 @@
             "minecraft:hand_equipped": false,
             "minecraft:foil": false,
             "minecraft:icon": { "texture": "radiant:glowing_obsidian" },
-            "minecraft:display_name": { "value": "Prestige (100k$ Max Level" }
+            "minecraft:display_name": { "value": "Prestige (100k$) Max Level" }
         },
         "events": {}
     }

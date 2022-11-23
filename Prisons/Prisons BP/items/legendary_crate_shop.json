@@ -10,7 +10,7 @@
             "minecraft:hand_equipped": false,
             "minecraft:foil": false,
             "minecraft:icon": { "texture": "paper" },
-            "minecraft:display_name": { "value": "Legendary Crate(900$)" }
+            "minecraft:display_name": { "value": "Legendary Crate(2000$)" }
         },
         "events": {}
     }
