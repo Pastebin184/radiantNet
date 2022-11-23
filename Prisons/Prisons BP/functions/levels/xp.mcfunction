@@ -58,3 +58,6 @@ execute as @a run clear @a[hasitem={item=emerald_block}] emerald_block 0 1
 execute as @a[hasitem={item=netherite_block}] run scoreboard players add @s money 20
 execute as @a[hasitem={item=netherite_block}] run scoreboard players add @s xp 375
 execute as @a run clear @a[hasitem={item=netherite_block}] netherite_block 0 1
+execute as @a[hasitem={item=lodestone}] run scoreboard players add @s beaconsell 1
+execute as @a[hasitem={item=lodestone}] run scoreboard players add @s xp 5
+execute as @a run clear @a[hasitem={item=lodestone}] lodestone 0 1
