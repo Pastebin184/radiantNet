@@ -10,7 +10,7 @@
             "minecraft:hand_equipped": true,
             "minecraft:foil": true,
             "minecraft:icon": { "texture": "arrow" },
-            "minecraft:display_name": { "value": "§l§3Upgrade Beacon Multiplier" },
+            "minecraft:display_name": { "value": "§l§dUpgrade Beacon Multiplier (250B)" },
             "minecraft:creative_category": {
                 "parent": "itemGroup.name.sword"
             },
