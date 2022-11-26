@@ -1,5 +1,5 @@
 {
-	"format_version": "1.16.100",
+	"format_version": "1.18.0",
 	"minecraft:item": {
 		"description": {
 			"identifier": "radiant:black_iron_helmet",
@@ -33,7 +33,7 @@
 			},
 			"minecraft:wearable": {
 				"dispensable": true,
-				"slot": "slot.armor.helmet"
+				"slot": "slot.armor.head"
 			},
 			"minecraft:durability": {
 				"max_durability": 200

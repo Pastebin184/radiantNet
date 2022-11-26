@@ -1,5 +1,5 @@
 {
-	"format_version": "1.16.100",
+	"format_version": "1.18.0",
 	"minecraft:item": {
 		"description": {
 			"identifier": "radiant:black_iron_leggings",
@@ -21,7 +21,7 @@
 				"slot": "armor_legs"
 			},
 			"minecraft:armor": {
-				"protection": 2
+				"protection": 5
 			},
 			"minecraft:repairable": {
 				"repair_items": [
@@ -33,7 +33,7 @@
 			},
 			"minecraft:wearable": {
 				"dispensable": true,
-				"slot": "slot.armor.leggings"
+				"slot": "slot.armor.legs"
 			},
 			"minecraft:durability": {
 				"max_durability": 200
