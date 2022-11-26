@@ -25,9 +25,9 @@ execute as @a run clear @a[hasitem={item=netherrack}] netherrack 0 1
 execute as @a[hasitem={item=quartz}] run scoreboard players add @s money 9
 execute as @a[hasitem={item=quartz}] run scoreboard players add @s xp 63
 execute as @a run clear @a[hasitem={item=quartz}] quartz 0 1
-execute as @a[hasitem={item=netherite_scrap}] run scoreboard players add @s money 10
-execute as @a[hasitem={item=netherite_scrap}] run scoreboard players add @s xp 100
-execute as @a run clear @a[hasitem={item=netherite_scrap}] netherite_scrap 0 1
+execute as @a[hasitem={item=ancient_debris}] run scoreboard players add @s money 10
+execute as @a[hasitem={item=ancient_debris}] run scoreboard players add @s xp 100
+execute as @a run clear @a[hasitem={item=ancient_debris}] ancient_debris 0 1
 execute as @a[hasitem={item=emerald}] run scoreboard players add @s money 11
 execute as @a[hasitem={item=emerald}] run scoreboard players add @s xp 110
 execute as @a run clear @a[hasitem={item=emerald}] emerald 0 1

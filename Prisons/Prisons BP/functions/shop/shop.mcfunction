@@ -98,9 +98,9 @@ execute as @a[hasitem={item=radiant:netherite_chestplate}] run clear @s radiant:
 clear @a radiant:filler
 
 execute as @a[hasitem={item=radiant:prestige}] if score @s money matches 100000.. if score @s levels matches 250 run tag @s add prestigeASD
-execute as @a[hasitem={item=radiant:prestige}, tag=prestigeASD] if score @s money matches 100000.. if score @s levels matches 250 run scoreboard players add @p gems 1
-execute as @a[hasitem={item=radiant:prestige}, tag=prestigeASD] if score @s money matches 100000.. if score @s levels matches 250 run scoreboard players add @p prestige 1
-execute as @a[hasitem={item=radiant:prestige}, tag=prestigeASD] if score @s money matches 100000.. if score @s levels matches 250 run tellraw @p {"rawtext":[{"text":"§aSuccesfully Prestiged"}]}
+execute as @a[hasitem={item=radiant:prestige}, tag=prestigeASD] run scoreboard players add @p gems 1
+execute as @a[hasitem={item=radiant:prestige}, tag=prestigeASD] run scoreboard players add @p prestige 1
+execute as @a[hasitem={item=radiant:prestige}, tag=prestigeASD] run tellraw @p {"rawtext":[{"text":"§aSuccesfully Prestiged"}]}
 
 execute as @a[hasitem={item=radiant:prestige}, tag=prestigeASD] run scoreboard players set @p xp 0
 execute as @a[hasitem={item=radiant:prestige}, tag=prestigeASD] run scoreboard players set @p levels 0
