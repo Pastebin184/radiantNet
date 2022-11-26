@@ -100,7 +100,7 @@ clear @a radiant:filler
 execute as @a[hasitem={item=radiant:prestige}] if score @s money matches 100000.. if score @s levels matches 250 run tag @s add prestigeASD
 execute as @a[hasitem={item=radiant:prestige}, tag=prestigeASD] run scoreboard players add @s gems 1
 execute as @a[hasitem={item=radiant:prestige}, tag=prestigeASD] run scoreboard players add @s prestige 1
-execute as @a[hasitem={item=radiant:prestige}, tag=prestigeASD] run tellraw @p {"rawtext":[{"text":"§aSuccesfully Prestiged"}]}
+execute as @a[hasitem={item=radiant:prestige}, tag=prestigeASD] run tellraw @s {"rawtext":[{"text":"§aSuccesfully Prestiged"}]}
 
 execute as @a[hasitem={item=radiant:prestige}, tag=prestigeASD] run scoreboard players set @s xp 0
 execute as @a[hasitem={item=radiant:prestige}, tag=prestigeASD] run scoreboard players set @s levels 0
