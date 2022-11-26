@@ -10,7 +10,7 @@
 				"parent": "itemGroup.name.boots"
 			},
 			"minecraft:icon": {
-				"texture": "iron_boots"
+				"texture": "radiant:black_iron_boots"
 			},
 			"minecraft:display_name": {
 				"value": "Black Iron Boots"

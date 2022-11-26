@@ -10,7 +10,7 @@
 				"parent": "itemGroup.name.helmet"
 			},
 			"minecraft:icon": {
-				"texture": "iron_helmet"
+				"texture": "radiant:black_iron_helmet"
 			},
 			"minecraft:display_name": {
 				"value": "Black Iron Helmet"

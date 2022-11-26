@@ -10,7 +10,7 @@
 				"parent": "itemGroup.name.leggings"
 			},
 			"minecraft:icon": {
-				"texture": "iron_leggings"
+				"texture": "radiant:black_iron_leggings"
 			},
 			"minecraft:display_name": {
 				"value": "Black Iron Leggings"

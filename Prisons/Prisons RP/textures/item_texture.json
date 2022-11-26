@@ -121,6 +121,18 @@
         },
         "radiant:black_iron": {
             "textures": "textures/items/black_iron.png"
+        },
+        "radiant:black_iron_helmet": {
+            "textures": "textures/items/black_iron_helmet.png"
+        },
+        "radiant:black_iron_chestplate": {
+            "textures": "textures/items/black_iron_chestplate.png"
+        },
+        "radiant:black_iron_leggings": {
+            "textures": "textures/items/black_iron_leggings.png"
+        },
+        "radiant:black_iron_boots": {
+            "textures": "textures/items/black_iron_boots.png"
         }
     }
 }

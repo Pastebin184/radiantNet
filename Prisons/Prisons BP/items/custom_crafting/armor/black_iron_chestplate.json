@@ -10,7 +10,7 @@
 				"parent": "itemGroup.name.chestplate"
 			},
 			"minecraft:icon": {
-				"texture": "iron_chestplate"
+				"texture": "radiant:black_iron_chestplate"
 			},
 			"minecraft:display_name": {
 				"value": "Black Iron chestplate"
