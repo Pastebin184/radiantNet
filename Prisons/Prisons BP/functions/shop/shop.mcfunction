@@ -101,9 +101,9 @@ execute as @a[hasitem={item=radiant:prestige}] if score @s money matches 100000.
 execute as @a[hasitem={item=radiant:prestige}] if score @s money matches 100000.. if score @s levels matches 250 run scoreboard players add @p prestige 1
 execute as @a[hasitem={item=radiant:prestige}] if score @s money matches 100000.. if score @s levels matches 250 run tellraw @p {"rawtext":[{"text":"§aSuccesfully Prestiged"}]}
 
-execute as @a[hasitem={item=radiant:prestige}] if score @s money matches 100000.. if score @s levels matches 250 run scoreboard players set @p money 0
 execute as @a[hasitem={item=radiant:prestige}] if score @s money matches 100000.. if score @s levels matches 250 run scoreboard players set @p xp 0
 execute as @a[hasitem={item=radiant:prestige}] if score @s money matches 100000.. if score @s levels matches 250 run scoreboard players set @p levels 0
+execute as @a[hasitem={item=radiant:prestige}] if score @s money matches 100000.. if score @s levels matches 250 run scoreboard players set @p money 0
 execute as @a[hasitem={item=radiant:prestige}] run clear @s radiant:prestige
 
 execute as @a[hasitem={item=radiant:common_crate_shop}] if score @s money matches 450.. run give @s radiant:common_crate 1 0

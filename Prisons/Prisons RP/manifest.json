@@ -1,8 +1,8 @@
 {
 	"format_version": 2,
 	"header": {
-		"name": "Radiant Prisons RP v1.24",
-		"uuid": "ac08c638-0465-44b3-80fb-5264491e7482",
+		"name": "Radiant Prisons RP v1.25",
+		"uuid": "fb325d5a-2680-440a-90f7-200683ee5f96",
 		"description": "Resources For Radiant Prisons",
 		"version": [1, 1, 0],
 		"min_engine_version": [1, 19, 41]
