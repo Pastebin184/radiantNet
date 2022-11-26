@@ -118,6 +118,9 @@
         },
         "radiant:glowing_obsidian": {
             "textures": "textures/items/glowing_obsidian.png"
+        },
+        "radiant:black_iron": {
+            "textures": "textures/items/black_iron.png"
         }
     }
 }

@@ -1,0 +1,20 @@
+{
+	"format_version": "1.17.41",
+	
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "radiant:black_iron_leggings"
+		},
+		"tags": ["crafting_table"],
+
+		"pattern": [
+			"XXX",
+			"X X",
+            "X X"
+		],
+		"key": {
+			"X": "radiant:black_iron"
+		},
+		"result": "radiant:black_iron_leggings"
+	}
+}
