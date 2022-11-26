@@ -133,6 +133,9 @@
         },
         "radiant:black_iron_boots": {
             "textures": "textures/items/black_iron_boots.png"
+        },
+        "radiant:up_arrow": {
+            "textures": "textures/items/up_arrow.png"
         }
     }
 }
