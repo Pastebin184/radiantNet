@@ -104,7 +104,7 @@ execute as @a[hasitem={item=radiant:prestige}, tag=prestigeASD] run tellraw @p {
 
 execute as @a[hasitem={item=radiant:prestige}, tag=prestigeASD] run scoreboard players set @p xp 0
 execute as @a[hasitem={item=radiant:prestige}, tag=prestigeASD] run scoreboard players set @p levels 0
-execute as @a[hasitem={item=radiant:prestige}, tag=prestigeASD] run scoreboard players set @p money 0
+execute as @a[hasitem={item=radiant:prestige}, tag=prestigeASD] run scoreboard players  set @p money 0
 execute as @a[hasitem={item=radiant:prestige}, tag=prestigeASD] run tag @s remove prestigeASD
 execute as @a[hasitem={item=radiant:prestige}] run clear @s radiant:prestige
 
