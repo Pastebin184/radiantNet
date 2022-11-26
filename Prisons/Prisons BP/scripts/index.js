@@ -38,3 +38,21 @@ client.commands.create({
     if (checkCommandCooldown("spawn", player)) return
     player.runCommandAsync("tp @s 86 65 91")
 })
+
+client.commands.create({
+    name: "clearlag",
+    description: "Clears items on the floor",
+    permission: "staff"
+}, ({ player }) => {
+    if (checkCommandCooldown("clearlag", player)) return
+    player.runCommandAsync("function commands/lagclear")
+})
+
+client.commands.create({
+    name: "feed",
+    description: "Feeds the player",
+    permission: "cmd.feed"
+}, ({ player }) => {
+    if (checkCommandCooldown("feed", player)) return
+    player.runCommandAsync("function commands/feed")
+})

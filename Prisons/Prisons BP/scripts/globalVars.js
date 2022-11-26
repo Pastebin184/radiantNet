@@ -5,7 +5,9 @@ export const config = {
 }
 
 export const commandCooldowns = {
-    spawn: 100
+    spawn: 100,
+    clearlag: 200,
+    feed: 240 
 }
 
 /**@type {{[key: string]: {cost: number, xp: number}}} */
