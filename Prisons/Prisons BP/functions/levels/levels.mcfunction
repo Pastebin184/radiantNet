@@ -247,4 +247,4 @@ execute as @a if score @s xp matches 1080450.. run scoreboard players set @s lev
 execute as @a if score @s xp matches 1089288.. run scoreboard players set @s levels 247
 execute as @a if score @s xp matches 3294486.. run scoreboard players set @s levels 248
 execute as @a if score @s xp matches 4428288.. run scoreboard players set @s levels 249
-execute as @a if score @s xp matches 5580090.. run scoreboard players set @s levels 250
+execute as @a if score @s xp matches 10000000.. run scoreboard players set @s levels 250
