@@ -24,7 +24,7 @@
             "open": {
                 "run_command": {
                     "command": [
-                        "function multiplier/xp_12"
+                        "function multipliers/xp_12"
                     ]
                 }
             }
