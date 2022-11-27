@@ -79,12 +79,12 @@ execute as @a[hasitem={item=radiant:iron_chestplate}] if score @s money matches 
 execute as @a[hasitem={item=radiant:iron_chestplate}] if score @s money matches 25000.. run scoreboard players remove @s money 25000
 execute as @a[hasitem={item=radiant:iron_chestplate}] run clear @s radiant:iron_chestplate
 
-execute as @a[hasitem={item=radiant:diamond_chestplate}] if score @s money matches 250000.. run give @s diamond_helmet 1 0
-execute as @a[hasitem={item=radiant:diamond_chestplate}] if score @s money matches 250000.. run give @s diamond_chestplate 1 0
-execute as @a[hasitem={item=radiant:diamond_chestplate}] if score @s money matches 250000.. run give @s diamond_leggings 1 0
-execute as @a[hasitem={item=radiant:diamond_chestplate}] if score @s money matches 250000.. run give @s diamond_boots 1 0
-execute as @a[hasitem={item=radiant:diamond_chestplate}] if score @s money matches 250000.. run tellraw @s {"rawtext": [{"text": "§l§aPurchase Succeeded!"}]}
-execute as @a[hasitem={item=radiant:diamond_chestplate}] if score @s money matches 250000.. run scoreboard players remove @s money 250000
+execute as @a[hasitem={item=radiant:diamond_chestplate}] if score @s money matches 150000.. run give @s diamond_helmet 1 0
+execute as @a[hasitem={item=radiant:diamond_chestplate}] if score @s money matches 150000.. run give @s diamond_chestplate 1 0
+execute as @a[hasitem={item=radiant:diamond_chestplate}] if score @s money matches 150000.. run give @s diamond_leggings 1 0
+execute as @a[hasitem={item=radiant:diamond_chestplate}] if score @s money matches 150000.. run give @s diamond_boots 1 0
+execute as @a[hasitem={item=radiant:diamond_chestplate}] if score @s money matches 150000.. run tellraw @s {"rawtext": [{"text": "§l§aPurchase Succeeded!"}]}
+execute as @a[hasitem={item=radiant:diamond_chestplate}] if score @s money matches 150000.. run scoreboard players remove @s money 150000
 execute as @a[hasitem={item=radiant:diamond_chestplate}] run clear @s radiant:diamond_chestplate
 
 execute as @a[hasitem={item=radiant:netherite_chestplate}] if score @s money matches 5000000.. run give @s netherite_helmet 1 0
