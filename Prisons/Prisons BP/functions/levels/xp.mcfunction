@@ -17,25 +17,25 @@ execute as @a[hasitem={item=redstone}] run scoreboard players add @s money 1
 execute as @a[hasitem={item=redstone}] run scoreboard players add @s xpSell 12
 execute as @a run clear @a[hasitem={item=redstone}] redstone 0 1
 execute as @a[hasitem={item=diamond}] run scoreboard players add @s money 7
-execute as @a[hasitem={item=diamond}] run scoreboard players add @s xpSell 49
+execute as @a[hasitem={item=diamond}] run scoreboard players add @s xpSell 35
 execute as @a run clear @a[hasitem={item=diamond}] diamond 0 1
 execute as @a[hasitem={item=netherrack}] run scoreboard players add @s money 8
-execute as @a[hasitem={item=netherrack}] run scoreboard players add @s xpSell 56
+execute as @a[hasitem={item=netherrack}] run scoreboard players add @s xpSell 40
 execute as @a run clear @a[hasitem={item=netherrack}] netherrack 0 1
 execute as @a[hasitem={item=quartz}] run scoreboard players add @s money 9
-execute as @a[hasitem={item=quartz}] run scoreboard players add @s xpSell 63
+execute as @a[hasitem={item=quartz}] run scoreboard players add @s xpSell 40
 execute as @a run clear @a[hasitem={item=quartz}] quartz 0 1
 execute as @a[hasitem={item=ancient_debris}] run scoreboard players add @s money 10
-execute as @a[hasitem={item=ancient_debris}] run scoreboard players add @s xpSell 100
+execute as @a[hasitem={item=ancient_debris}] run scoreboard players add @s xpSell 300
 execute as @a run clear @a[hasitem={item=ancient_debris}] ancient_debris 0 1
 execute as @a[hasitem={item=emerald}] run scoreboard players add @s money 11
-execute as @a[hasitem={item=emerald}] run scoreboard players add @s xpSell 110
+execute as @a[hasitem={item=emerald}] run scoreboard players add @s xpSell 55
 execute as @a run clear @a[hasitem={item=emerald}] emerald 0 1
 execute as @a[hasitem={item=end_stone}] run scoreboard players add @s money 12
 execute as @a[hasitem={item=end_stone}] run scoreboard players add @s xpSell 132
 execute as @a run clear @a[hasitem={item=end_stone}] end_stone 0 1
 execute as @a[hasitem={item=obsidian}] run scoreboard players add @s money 13
-execute as @a[hasitem={item=obsidian}] run scoreboard players add @s xpSell 144
+execute as @a[hasitem={item=obsidian}] run scoreboard players add @s xpSell 220
 execute as @a run clear @a[hasitem={item=obsidian}] obsidian 0 1
 execute as @a[hasitem={item=iron_block}] run scoreboard players add @s money 14
 execute as @a[hasitem={item=iron_block}] run scoreboard players add @s xpSell 159
