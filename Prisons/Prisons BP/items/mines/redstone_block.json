@@ -10,7 +10,7 @@
             "minecraft:hand_equipped": false,
             "minecraft:foil": false,
             "minecraft:icon": { "texture": "radiant:redstone_block" },
-            "minecraft:display_name": { "value": "Mine Q (Level 0+ Prestige 5)" }
+            "minecraft:display_name": { "value": "Mine Q (Level 0+ Prestige 10)" }
         },
         "events": {}
     }
