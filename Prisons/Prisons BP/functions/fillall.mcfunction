@@ -1,4 +1,4 @@
-scoreboard players add fill 1
+scoreboard players add fill timer 1
 
 execute as @a if score fill timer matches 40.. run function shop/shop_fill
 execute as @a if score fill timer matches 40.. run function misc/koth_fill
