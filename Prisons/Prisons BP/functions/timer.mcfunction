@@ -48,3 +48,8 @@ execute if score kothR matches 2400.. run execute as @a at @s if block ~ ~-1 ~ r
 execute if score kothR matches 2400.. run execute as @a at @s if block ~ ~-1 ~ radiant:kothblock run scoreboard players add @s xp 350
 
 execute if score kothR matches 2400.. run scoreboard players set kothR timer 0
+
+scoreboard players add silo timer 1 
+execute if score silo matches 18000.. run function silos/silo
+
+execute if score silo matches 2400.. run scoreboard players set silo timer 0
