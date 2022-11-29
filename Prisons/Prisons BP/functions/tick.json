@@ -1,5 +1,5 @@
 {
     "values": [
-        "levels/xp","mines/mines","shop/shop","misc/gamerules","misc/scores","misc/koth","misc/elevation","levels/levels","misc/koth","fragments/fragments","beacons/beacon","fillall"
+        "levels/xp","mines/mines","shop/shop","misc/gamerules","misc/scores","misc/koth","misc/elevation","levels/levels","misc/koth","fragments/fragments","beacons/beacon","fillall","custom_crafting/cc","custom_crafting/stats","scoreboardadd"
     ]
 }
