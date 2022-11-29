@@ -11,13 +11,13 @@ execute as @a if score @s levels matches 200.. if score @s prestige matches 1.. 
 execute as @a if score @s levels matches 50.. if score @s prestige matches 2.. run tag @s add mineK
 execute as @a if score @s levels matches 150.. if score @s prestige matches 2.. run tag @s add mineL
 execute as @a if score @s levels matches 200.. if score @s prestige matches 2.. run tag @s add mineM
-execute as @a if score @s levels matches 0.. if score @s prestige matches 3.. run tag @s add mineN
-execute as @a if score @s levels matches 125.. if score @s prestige matches 3.. run tag @s add mineO
-execute as @a if score @s levels matches 0.. if score @s prestige matches 4.. run tag @s add mineP
-execute as @a if score @s levels matches 125.. if score @s prestige matches 4.. run tag @s add mineQ
-execute as @a if score @s levels matches 0.. if score @s prestige matches 6.. run tag @s add mineR
-execute as @a if score @s levels matches 0.. if score @s prestige matches 8.. run tag @s add mineS
-execute as @a if score @s levels matches 0.. if score @s prestige matches 10.. run tag @s add mineT
+execute as @a if score @s levels matches 0.. if score @s prestige matches 4.. run tag @s add mineN
+execute as @a if score @s levels matches 0.. if score @s prestige matches 6.. run tag @s add mineO
+execute as @a if score @s levels matches 0.. if score @s prestige matches 8.. run tag @s add mineP
+execute as @a if score @s levels matches 0.. if score @s prestige matches 10.. run tag @s add mineQ
+execute as @a if score @s levels matches 0.. if score @s prestige matches 12.. run tag @s add mineR
+execute as @a if score @s levels matches 0.. if score @s prestige matches 16.. run tag @s add mineS
+execute as @a if score @s levels matches 0.. if score @s prestige matches 20.. run tag @s add mineT
 
 execute as @a[hasitem={item=radiant:coal_ore}, tag=mineA] run tp @s 240 75 -421
 execute as @a[hasitem={item=radiant:copper_ore}, tag=mineB] run tp @s 240 75 -338

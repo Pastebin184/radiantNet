@@ -10,7 +10,7 @@
             "minecraft:hand_equipped": false,
             "minecraft:foil": false,
             "minecraft:icon": { "texture": "radiant:iron_block" },
-            "minecraft:display_name": { "value": "Mine N (Level 0+ Prestige 3)" }
+            "minecraft:display_name": { "value": "Mine N (Level 0+ Prestige 4)" }
         },
         "events": {}
     }

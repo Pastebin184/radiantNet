@@ -10,7 +10,7 @@
             "minecraft:hand_equipped": false,
             "minecraft:foil": false,
             "minecraft:icon": { "texture": "radiant:netherite_block" },
-            "minecraft:display_name": { "value": "Mine T (Level 0+ Prestige 10)" }
+            "minecraft:display_name": { "value": "Mine T (Level 0+ Prestige 20)" }
         },
         "events": {}
     }

@@ -10,7 +10,7 @@
             "minecraft:hand_equipped": false,
             "minecraft:foil": false,
             "minecraft:icon": { "texture": "radiant:gold_block" },
-            "minecraft:display_name": { "value": "Mine O (Level 125+ Prestige 3)" }
+            "minecraft:display_name": { "value": "Mine O (Level 0+ Prestige 6)" }
         },
         "events": {}
     }

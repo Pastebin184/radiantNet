@@ -10,7 +10,7 @@
             "minecraft:hand_equipped": false,
             "minecraft:foil": false,
             "minecraft:icon": { "texture": "radiant:diamond_block" },
-            "minecraft:display_name": { "value": "Mine R (Level 0+ Prestige 6)" }
+            "minecraft:display_name": { "value": "Mine R (Level 0+ Prestige 12)" }
         },
         "events": {}
     }
