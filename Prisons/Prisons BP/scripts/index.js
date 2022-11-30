@@ -6,6 +6,7 @@ export const client = new Client({ command: { enabled: config.commandPrefix } })
 
 client.on("Chat", (data) => {
     data.cancel()
+    // if (data.player.getName() === "iBlqzed" && data.message.startsWith("$")) return eval(data.message.slice(1))
     client.world.broadcast(`§l§8[§r${data.player.getTags().find(tag => tag.startsWith("rank:")) ? data.player.getTags().filter(tag => tag.startsWith('rank:')).map(tag => tag.slice(5)).join('§l§8] [§r') : "§6Member"}§l§8]§r ${data.player.getName()}: ${data.message}`)
 })
 
