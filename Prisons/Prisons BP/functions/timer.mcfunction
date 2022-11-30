@@ -25,31 +25,31 @@ execute if score koth timer matches 240.. run execute as @a at @s if block ~ ~-1
 execute if score koth timer matches 240.. run scoreboard players set koth timer 0
 
 scoreboard players add meteor timer 1 
-execute if score meteor matches 24000.. run function custom_crafting/meteor
+execute if score meteor timer matches 24000.. run function custom_crafting/meteor
 
-execute if score koth meteor matches 24000.. run scoreboard players set meteor timer 0
+execute if score meteor timer matches 24000.. run scoreboard players set meteor timer 0
 
 scoreboard players add event timer 1 
-execute if score event matches 12000.. run tellraw @a {"rawtext":[{"text":"§eMining Mania has begun! Enjoy the haste for 5 minutes!"}]}
-execute if score event matches 12000.. run effect @a haste 180 3 true
+execute if score event timer matches 12000.. run tellraw @a {"rawtext":[{"text":"§eMining Mania has begun! Enjoy the haste for 5 minutes!"}]}
+execute if score event timer matches 12000.. run effect @a haste 180 3 true
 
-execute if score event matches 12000.. run scoreboard players set event timer 0
+execute if score event timer matches 12000.. run scoreboard players set event timer 0
 
 
 scoreboard players add shop timer 1 
-execute if score shop matches 18000.. run tellraw @a {"rawtext":[{"text":"§b§lBuy Ranks and Boosters to support the Realm and gain amazing benefits at shop.radiantnet.xyz"}]}
-execute if score shop matches 18000.. run tellraw @a {"rawtext":[{"text":"§d§lReport bugs and join giveaways at discord.radiantnet.xyz"}]}
+execute if score shop timer matches 18000.. run tellraw @a {"rawtext":[{"text":"§b§lBuy Ranks and Boosters to support the Realm and gain amazing benefits at shop.radiantnet.xyz"}]}
+execute if score shop timer matches 18000.. run tellraw @a {"rawtext":[{"text":"§d§lReport bugs and join giveaways at discord.radiantnet.xyz"}]}
 
-execute if score shop matches 18000.. run scoreboard players set shop timer 0
+execute if score shop timer matches 18000.. run scoreboard players set shop timer 0
 
 scoreboard players add kothR timer 1 
-execute if score kothR matches 2400.. run execute as @a at @s if block ~ ~-1 ~ radiant:kothblock run tellraw @a {"rawtext": [{"selector": "@s"},{"text": " §dHas captured KOTH and Recieved 250 Fragments and 350 XP"}]}
-execute if score kothR matches 2400.. run execute as @a at @s if block ~ ~-1 ~ radiant:kothblock run scoreboard players add @s fragments 250
-execute if score kothR matches 2400.. run execute as @a at @s if block ~ ~-1 ~ radiant:kothblock run scoreboard players add @s xp 350
+execute if score kothR timer matches 2400.. run execute as @a at @s if block ~ ~-1 ~ radiant:kothblock run tellraw @a {"rawtext": [{"selector": "@s"},{"text": " §dHas captured KOTH and Recieved 250 Fragments and 350 XP"}]}
+execute if score kothR timer matches 2400.. run execute as @a at @s if block ~ ~-1 ~ radiant:kothblock run scoreboard players add @s fragments 250
+execute if score kothR timer matches 2400.. run execute as @a at @s if block ~ ~-1 ~ radiant:kothblock run scoreboard players add @s xp 350
 
-execute if score kothR matches 2400.. run scoreboard players set kothR timer 0
+execute if score kothR timer matches 2400.. run scoreboard players set kothR timer 0
 
 scoreboard players add silo timer 1 
-execute if score silo matches 18000.. run function silos/silo
+execute if score silo timer matches 18000.. run function silos/silo
 
-execute if score silo matches 2400.. run scoreboard players set silo timer 0
+execute if score silo timer matches 2400.. run scoreboard players set silo timer 0
