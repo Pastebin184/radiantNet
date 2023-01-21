@@ -15,3 +15,4 @@ function custom_crafting/stats
 function scoreboardadd
 function tellraw
 function tempac
+function gems/gem_shop
