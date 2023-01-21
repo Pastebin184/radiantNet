@@ -53,3 +53,9 @@ scoreboard players add silo timer 1
 execute if score silo timer matches 18000.. run function silos/silo
 
 execute if score silo timer matches 2400.. run scoreboard players set silo timer 0
+
+scoreboard players add xptimer timer 1 
+
+execute if score xptimer timer matches 20.. run execute as @a[tag=doubleXp] run scoreboard players remove @s xptimer 1
+
+execute if score xptimer timer matches 20.. run scoreboard players set xptimer timer 0

@@ -1,3 +1,3 @@
 scoreboard players set @s xptimer 43200
 tag @s add doubleXp
-clear @s radiant:xp_multi_12
+clear @s radiant:xp_multi_12 0 1
