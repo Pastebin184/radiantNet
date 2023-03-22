@@ -1,1 +1,51 @@
-
+{
+    "format_version": 2,
+    "header": {
+        "name": "Radiant Factions BP v1.0",
+        "description": "Behaviors for Radiant Factions",
+        "uuid": "c20127dc-7b27-49bc-a597-aeceb1c48734",
+        "version": [
+            1,
+            0,
+            0
+        ],
+        "min_engine_version": [
+            1,
+            19,
+            50
+        ]
+    },
+    "modules": [
+        {
+            "type": "data",
+            "uuid": "5320e237-cf7f-4437-a200-d01d98a1d886",
+            "version": [
+                1,
+                0,
+                0
+            ]
+        },
+        {
+            "uuid": "239c134f-67bf-4738-9bcc-8c69d31b1f72",
+            "version": [1, 0, 0],
+            "type": "script",
+            "language": "javascript",
+            "entry": "scripts/index.js"
+        }
+    ],
+    "metadata": {
+        "authors": [
+            "Pastebin#8616, raptor#4545"
+        ]
+    },
+    "dependencies": [
+        {
+            "module_name": "@minecraft/server",
+            "version": "1.0.0-beta"
+        },
+        {
+            "module_name": "@minecraft/server-ui",
+            "version": "1.0.0-beta"
+        }
+    ]
+}
