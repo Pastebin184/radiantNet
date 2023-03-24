@@ -1,5 +1,6 @@
 import { world } from "@minecraft/server";
 import { system } from "@minecraft/server";
+import { Command } from 'commands.js'
 
 const amongUs = ""
 console.warn(amongUs * 100)
@@ -48,3 +49,5 @@ world.events.beforeChat.subscribe((data) => {
     findRank(player.getTags())
 
 })
+
+ 
