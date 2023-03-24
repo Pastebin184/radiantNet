@@ -36,11 +36,12 @@ system.runInterval(() => {
 
 })
 
+
 world.events.beforeChat.subscribe((data) => {
     const player = data.sender
     const message = data.message
     data.cancel = true
-    world.sendMessage(`[${findRank(player.getTags())}] ${player.name}`)
+    world.sendMessage(`[${findRank(player.getTags())}§r] ${player.name}`)
 
 
 
@@ -50,4 +51,5 @@ world.events.beforeChat.subscribe((data) => {
 
 })
 
- 
+
+
