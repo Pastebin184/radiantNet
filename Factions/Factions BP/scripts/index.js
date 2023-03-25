@@ -1,9 +1,12 @@
 import { world } from "@minecraft/server";
 import { system } from "@minecraft/server";
-import { Command } from 'commands.js'
+import { commandCreate } from 'commands.js'
+import {prefix} from 'config.js'
+
 
 const amongUs = ""
 console.warn(amongUs * 100)
+
 
 
 function isRank(tag) {
@@ -45,8 +48,10 @@ world.events.beforeChat.subscribe((data) => {
 
 
 
-    if (!message.startsWith('-'))
-        return
+    if (!message.startsWith(`${prefix}`))return
+    const args =  message.slice(prefix.length).trim().split(/\s+/);
+    const command = args.shift()
+    commandCreate(command, args, args.join(" "), player)
     findRank(player.getTags())
 
 })
