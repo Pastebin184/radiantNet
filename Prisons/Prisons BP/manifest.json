@@ -1,52 +1,39 @@
+
 {
     "format_version": 2,
     "header": {
-        "name": "Radiant Prisons BP v2.02",
-        "description": "Behaviors for Radiant Prisons",
-        "uuid": "5b2f9cb0-e8ee-4b27-b56e-c7689f7553db",
-        "version": [
-            1,
-            0,
-            0
-        ],
-        "min_engine_version": [
-            1,
-            19,
-            50
-        ]
+    "name": "Radiant Prisons BP v2.03",
+    "description": "Behaviors for Radiant Prisons",
+    "uuid": "cc83b72b-a2d6-40a9-ade9-74028620552c",
+      "version": [1,0,0],
+      "min_engine_version": [1,19,63]
     },
     "modules": [
-        {
-            "type": "data",
-            "uuid": "5320e237-cf7f-4437-a200-d01d98a1d886",
-            "version": [
-                1,
-                0,
-                0
-            ]
-        },
-        {
-            "uuid": "239c134f-67bf-4738-9bcc-8c69d31b1f72",
-            "version": [1, 0, 0],
-            "type": "script",
-            "language": "javascript",
-            "entry": "scripts/main.js"
-        }
+      {
+        "type": "data",
+        "uuid": "642c176b-5323-49c5-afdb-a7d0227c9620",
+        "version": [1,0,0]
+      },
+      {
+        "type": "script",
+        "language": "javascript",
+        "uuid": "a99c612c-e2ff-4dd2-a3a4-8be2e5e82d39",
+        "version": [1,0,0],
+        "entry": "scripts/main.js"
+      }
     ],
-    "metadata": {
-        "authors": [
-            "Pastebin#8616, raptor#4545"
-        ],
-        "url": "http://radiantnet.xyz"
-    },
     "dependencies": [
-        {
-            "module_name": "@minecraft/server",
-            "version": "1.0.0-beta"
-        },
-        {
-            "module_name": "@minecraft/server-ui",
-            "version": "1.0.0-beta"
-        }
-    ]
-}
+      { 
+          "module_name": "@minecraft/server",
+          "version": "1.1.0-beta"
+      },
+      { 
+          "module_name": "@minecraft/server-ui",
+          "version": "1.0.0-beta"
+      },
+      { 
+        "module_name": "@minecraft/server-gametest",
+        "version": "1.0.0-beta"
+    }
+  ]
+  }
