@@ -13,7 +13,7 @@ export const commandPrefix = "-"
 
 export class Commands {
 	/** @readonly @type {Map<string, CommandData>}*/
-	static cache = new Map()
+	static cache
 	constructor() {}
 	/**
 	 * Create a new command
@@ -35,10 +35,7 @@ export class Commands {
 	 * @param {string} command The name of the command to remove
 	 */
 	remove(command) {
-		const index = Commands.registeredCommands.findIndex(cmd => cmd.name === command.toLowerCase());
-		if (index === -1)
-			return;
-		Commands.registeredCommands.splice(index, 1);
+		Commands.cache.delete(command)
 	}
 	/**
 	 * Loop through all commands
@@ -46,19 +43,19 @@ export class Commands {
 	 * @param {any} thisArg The value of this "this" word
 	 */
 	forEach(callback, thisArg) {
-		Commands.registeredCommands.forEach(callback, thisArg);
+		[...Commands.cache.values()].forEach(callback, thisArg);
 	}
 	/**
 	 * Clear all commands
 	 */
 	clear() {
-		Commands.registeredCommands = [];
+		Commands.cache.clear()
 	}
 }
 
-export const CommandManager = new Commands()
+Commands.cache = new Map()
 
-Commands.registeredCommands = [];
+export const CommandManager = new Commands()
 
 world.events.beforeChat.subscribe((data) => {
 	const { message, sender: player } = data;
@@ -66,12 +63,12 @@ world.events.beforeChat.subscribe((data) => {
 		return;
 	const args = message.trim().slice(commandPrefix.length).split(/\s+/g);
 	const cmd = args.shift().toLowerCase();
-	const [_, cmdData] = [...Commands.cache].find(([n, c]) => n === cmd || c.aliases.includes(cmd));
+	const cmdData = [...Commands.cache.values()].find((c) => c.name === cmd || c.aliases?.includes(cmd));
 	data.cancel = true;
 	if (!cmdData)
 		return player.sendMessage(`§cInvalid command!`);
 	if (player.getItemCooldown(`CD_${cmdData.name}`) !== 0) 
-		return player.sendMessage(`Command on cooldown for ${player.getItemCooldown(`CD_${cmdData.name}`) * 20} seconds!`)
+		return player.sendMessage(`§cCommand on cooldown for ${player.getItemCooldown(`CD_${cmdData.name}`) / 20} seconds!`)
 	if (!cmdData.permission(player))
 		return player.sendMessage(`§cInvalid permission!`);
 	player.startItemCooldown(`CD_${cmdData.name}`, cmdData.cooldown)
@@ -94,9 +91,17 @@ export const bypass = (str) => str.split(" ").map(v => bypassedWords[v.toLowerCa
 /**@param {string} args @param {Player} player */
 export function getPlayerArg(args) {
 	const joinedArgs = args.join(" ")
-    if (!/(?<=").+?(?=")/.test(joinedArgs)) return off(`You need to input a player's name! Example: "iBlqzed"`)
+    if (!/(?<=").+?(?=")/.test(joinedArgs)) return
 	const name = joinedArgs.match(/(?<=").+?(?=")/)[0]
     const target = world.getAllPlayers().find(e => e.name === name)
-    if (!target) return undefined
+    if (!target) return
     return [target, joinedArgs.slice(name + 2).split(/\s+/g)]
+}
+
+/**
+ * 
+ * @param {Number} seconds - seconds: amount of seconds  
+ */
+ export function toTicks(seconds) {
+    return (seconds*20)
 }
