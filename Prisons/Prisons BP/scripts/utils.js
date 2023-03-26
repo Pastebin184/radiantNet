@@ -106,9 +106,16 @@ export function getPlayerArg(args) {
     return (seconds*20)
 }
 
+/**
+ * 
+ * @param {String} plr - player
+ * @returns Inputted player's rank
+ */
 
-function findRank(plr) {
-	plr.tag
+
+export function findRank(plr) {
+	if (!plr.getTags().find(tag => tag.startsWith('rank_')))  return 'Member'
+	return plr.getTags().find(tag => tag.startsWith('rank_')).slice(5)
 }
 
 

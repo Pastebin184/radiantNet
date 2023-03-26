@@ -1,5 +1,5 @@
 import { world, system, DynamicPropertiesDefinition, MinecraftEntityTypes, MinecraftEffectTypes, ItemStack } from "@minecraft/server";
-import { CommandManager, commandPrefix, bypass, getPlayerArg, Commands, toTicks} from './utils.js'
+import { CommandManager, commandPrefix, bypass, getPlayerArg, Commands, toTicks, findRank } from './utils.js'
 import "./api.js"
 
 world.events.worldInitialize.subscribe((data) => {
@@ -10,10 +10,13 @@ world.events.worldInitialize.subscribe((data) => {
     data.propertyRegistry.registerEntityTypeDynamicProperties(v, MinecraftEntityTypes.player)
 })
 
+
+
+
 world.events.beforeChat.subscribe((data) => {
     const { message, sender: player } = data
     data.cancel = true
-    if (!message.startsWith(commandPrefix)) return world.sendMessage(`[${findRank(player.getTags())}§r] ${player.name}: ${bypass(message)}`)
+    if (!message.startsWith(commandPrefix)) return world.sendMessage(`[${findRank(player)}§r] ${player.name}: ${bypass(message)}`)
 })
 
 CommandManager.create({
@@ -29,7 +32,7 @@ CommandManager.create({
     permissions: (plr) => plr.hasTag("cmd.feed")
 }, ({ player }) => {
     player.addEffect(MinecraftEffectTypes.saturation, 10, 255, true)
-    player.sendMessage("Fed the fatass")
+    player.sendMessage(`Fed ${player.name}`)
 })
 
 world.events.playerJoin.subscribe(({ playerName }) => {
@@ -53,7 +56,36 @@ CommandManager.create({
     permissions: (plr) => plr.hasTag("staff")
 }, ({ player }) => {
     player.runCommandAsync('kill @e[type=item]')
-    player.sendMessage("Cleared lag")
+    world.sendMessage(`§g${player.name}§f Cleared Lag`)
+})
+
+CommandManager.create({
+    name: "clearchat",
+    description: "Clears chat of all messages",
+    aliases: ['purge'],
+    cooldown: 700,
+    permission: (plr) => plr.hasTag("staff")
+}, ({ player }) => {
+    world.sendMessage(`\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n§g${player.name}§f Cleared Chat`)
+}
+)
+
+CommandManager.create({
+    name: "ban",
+    description: "Bans a player | Syntax: ",
+    permission: (plr) => plr.hasTag("staff")
+}, ({ player, args }) => {
+    const data = getPlayerArg(args)
+
+    if (!data) return player.sendMessage("Missing Arguments")
+    const target = data[0]
+
+
+
+
+    target.addTag('banned')
+    world.sendMessage(`${target.name} was banned by ${player.name}`)
+
 })
 
 CommandManager.create({
@@ -71,21 +103,22 @@ CommandManager.create({
 
 
 
-CommandManager.create({
-    name: "home",
-    description: "Do things to your home"
-}, ({ player, args }) => {
-    if (args[0] === "set") {
-        const home = (player.home = player.location)
-        player.sendMessage(`§aSet your home to ${Math.floor(home.x)} ${Math.floor(home.y)} ${Math.floor(home.z)}`)
-    }
-    if (["tp", "teleport"].includes(args[0])) {
-        const home = player.home
-        if (!home) return player.sendMessage(`§cYou do not have a home set! Do "-home set" to set your home!`)
-        player.teleport(player.home, player.dimension, player.getRotation().x, player.getRotation().y)
-        player.sendMessage(`Teleported to your home!`)
-    }
-})
+// CommandManager.create({
+//     name: "home",
+//     description: "Do things to your home"
+// }, ({ player, args }) => {
+//     if (args[0] === "set") {
+//         const home = (player.home = player.location)
+//         player.sendMessage(`§aSet your home to ${Math.floor(home.x)} ${Math.floor(home.y)} ${Math.floor(home.z)}`)
+//     }
+//     if (["tp", "teleport"].includes(args[0])) {
+//         const home = player.home
+//         if (!home) return player.sendMessage(`§cYou do not have a home set! Do "-home set" to set your home!`)
+//         player.teleport(player.home, player.dimension, player.getRotation().x, player.getRotation().y)
+//         player.sendMessage(`Teleported to your home!`)
+//     }
+// })
+
 
 CommandManager.create({
     name: "pay",
@@ -140,10 +173,20 @@ CommandManager.create({
 system.runInterval(() => {
 
     for (let i = 0; world.getAllPlayers().length > i; i++) {
-        console.error(world.getAllPlayers()[i].name) 
+        console.error(world.getAllPlayers()[i].name)
         if (!world.scoreboard.getObjective('warnings').getScore(world.getAllPlayers()[i].scoreboard) >= 5) return
-        world.getAllPlayers()[i].runCommandAsync(`kick ${world.getAllPlayers()[i]}`)
+        world.getAllPlayers()[i].runCommandAsync(`kick ${world.getAllPlayers()[i].name}`)
     }
 },
-toTicks(2)
+    toTicks(2)
+)
+
+system.runInterval(() => {
+    for (let i = 0; world.getAllPlayers().length > i; i++) {
+
+        if (!world.getAllPlayers()[i].hasTag('banned')) return
+        world.getAllPlayers()[i].hasTag('banned').runCommandAsync(`kick ${world.getAllPlayers()[i].name}`)
+
+    }
+}
 )
