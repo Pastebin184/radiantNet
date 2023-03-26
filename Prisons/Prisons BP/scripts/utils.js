@@ -105,3 +105,10 @@ export function getPlayerArg(args) {
  export function toTicks(seconds) {
     return (seconds*20)
 }
+
+
+function findRank(plr) {
+	plr.tag
+}
+
+
