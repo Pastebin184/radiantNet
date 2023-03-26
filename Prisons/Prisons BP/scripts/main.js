@@ -69,16 +69,7 @@ CommandManager.create({
 }
 )
 
-system.runInterval(() => {
 
-    for (let i = 0; world.getAllPlayers().length > i; i++) {
-        console.error(world.getAllPlayers()[i].name) 
-        if (!world.scoreboard.getObjective('warnings').getScore(world.getAllPlayers()[i].scoreboard) >= 5) return
-        world.getAllPlayers()[i].runCommandAsync(`kick ${world.getAllPlayers()[i]}`)
-    }
-},
-toTicks(2)
-)
 
 CommandManager.create({
     name: "home",
@@ -142,3 +133,17 @@ CommandManager.create({
     }
     player.message(`§3A chest has been placed near you with ${target.name}'s inventory.`)
 })
+
+
+
+
+system.runInterval(() => {
+
+    for (let i = 0; world.getAllPlayers().length > i; i++) {
+        console.error(world.getAllPlayers()[i].name) 
+        if (!world.scoreboard.getObjective('warnings').getScore(world.getAllPlayers()[i].scoreboard) >= 5) return
+        world.getAllPlayers()[i].runCommandAsync(`kick ${world.getAllPlayers()[i]}`)
+    }
+},
+toTicks(2)
+)
