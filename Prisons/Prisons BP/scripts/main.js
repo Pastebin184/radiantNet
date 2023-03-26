@@ -188,5 +188,6 @@ system.runInterval(() => {
         world.getAllPlayers()[i].hasTag('banned').runCommandAsync(`kick ${world.getAllPlayers()[i].name}`)
 
     }
-}
+},
+toTicks(5)
 )
