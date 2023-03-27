@@ -83,7 +83,9 @@ const bypassedWords = {
     'cum': 'cùm',
     'ass': 'àss',
 	'fatass': 'fàtass',
-    'kys': 'kýs'
+    'kys': 'kŷs',
+    'chink': 'chínk',
+    
 }
 
 export const bypass = (str) => str.split(" ").map(v => bypassedWords[v.toLowerCase()] ?? v).join(" ")

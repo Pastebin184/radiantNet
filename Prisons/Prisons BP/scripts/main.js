@@ -1,4 +1,4 @@
-import { world, system, DynamicPropertiesDefinition, MinecraftEntityTypes, MinecraftEffectTypes, ItemStack } from "@minecraft/server";
+import { world, system, DynamicPropertiesDefinition, MinecraftEntityTypes, MinecraftEffectTypes, ItemStack} from "@minecraft/server";
 import { CommandManager, commandPrefix, bypass, getPlayerArg, Commands, toTicks, findRank } from './utils.js'
 import "./api.js"
 
@@ -46,7 +46,11 @@ world.events.playerLeave.subscribe(({ playerName }) => {
 world.events.playerSpawn.subscribe(({ player, initialSpawn }) => {
     if (!initialSpawn) return
     player.sendMessage("§aWelcome to Radiant Prisons!")
+    if (player.hasTag("banned")) {
+        player.runCommandAsync(`kick ${player} §4You have been banned from Radiant Prisons`)
+    }
     Commands.cache.get("spawn").callback({ player, args: [] })
+    
 })
 
 CommandManager.create({
@@ -66,7 +70,7 @@ CommandManager.create({
     cooldown: 700,
     permission: (plr) => plr.hasTag("staff")
 }, ({ player }) => {
-    world.sendMessage(`\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n§g${player.name}§f Cleared Chat`)
+    world.sendMessage(`${'\n'.repeat(100)}§g${player.name}§f Cleared Chat`)
 }
 )
 
@@ -79,9 +83,6 @@ CommandManager.create({
 
     if (!data) return player.sendMessage("Missing Arguments")
     const target = data[0]
-
-
-
 
     target.addTag('banned')
     world.sendMessage(`${target.name} was banned by ${player.name}`)
@@ -97,6 +98,8 @@ CommandManager.create({
     if (!data) return player.sendMessage("No bitches")
     const target = data[0]
     target.scores.warnings += 1
+    target.sendMessage(`You have been warned by ${player}`)
+    world.sendMessage(`${target} has been warned by ${player}`)
     console.error(world.scoreboard.getObjective('warnings').getScore(target.scoreboard))
 }
 )
@@ -152,6 +155,7 @@ CommandManager.create({
     name: 'invsee',
     description: "See someone's inventory",
     aliases: ['isee'],
+    permission: (plr) => (plr.hasTag("staff"))
 }, async ({ args, player }) => {
     const data = getPlayerArg(args)
     if (!data) return player.sendMessage("§cInvalid Player Name! You need to input the player's name in quotation marks for it to work")
@@ -170,8 +174,8 @@ CommandManager.create({
 
 
 
-system.runInterval(() => {
 
+system.runInterval(() => {
     for (let i = 0; world.getAllPlayers().length > i; i++) {
         console.error(world.getAllPlayers()[i].name)
         if (!world.scoreboard.getObjective('warnings').getScore(world.getAllPlayers()[i].scoreboard) >= 5) return
@@ -187,7 +191,9 @@ system.runInterval(() => {
         if (!world.getAllPlayers()[i].hasTag('banned')) return
         world.getAllPlayers()[i].hasTag('banned').runCommandAsync(`kick ${world.getAllPlayers()[i].name}`)
 
-    }
+    } 
 },
-toTicks(5)
+toTicks(1)
 )
+
+
