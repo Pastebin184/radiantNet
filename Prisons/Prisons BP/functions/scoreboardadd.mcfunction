@@ -21,3 +21,7 @@ execute as @a run scoreboard players set @s xpSell 0
 execute as @a run scoreboard players operation @s beaconsell *= @s beaconmulti
 execute as @a run scoreboard players operation @s beacons += @s beaconsell
 execute as @a run scoreboard players set @s beaconsell 0
+
+#fishing Xp and Levels
+scoreboard players add @a fishingLevel 0
+scoreboard players add @a fishingXp 0
