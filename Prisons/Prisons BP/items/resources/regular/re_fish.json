@@ -2,7 +2,7 @@
     "format_version": "1.16.100",
     "minecraft:item": {
         "description": {
-            "identifier": "radiant:fish",
+            "identifier": "radiant:re_fish",
             "category": "items"
         },
         "components": {
