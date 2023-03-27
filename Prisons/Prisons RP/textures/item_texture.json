@@ -136,6 +136,36 @@
         },
         "radiant:up_arrow": {
             "textures": "textures/items/up_arrow.png"
+        },
+        "radiant:apple_pet": {
+            "textures": "textures/items/pets/apple.png"
+        },
+        "radinat:blaze_pet": {
+            "textures": "textures/items/pets/blaze.png"
+        },
+        "radiant:chicken_pet": {
+            "textures": "textures/items/pets/chicken.png"
+        },
+        "radiant:creeper_pet": {
+            "textures": "textures/items/pets/creeper.png"
+        },
+        "radiant:enderman_pet": {
+            "textures": "textures/items/pets/enderman.png"
+        },
+        "radiant:iron_golem_pet": {
+            "textures": "textures/items/pets/iron_golem.png"
+        },
+        "radiant:phantom_pet": {
+            "textures": "textures/items/pets/phantom.png"
+        },
+        "radiant:slime_pet": {
+            "textures": "textures/items/pets/slime.png"
+        },
+        "radiant:squid_pet": {
+            "textures": "textures/items/pets/squid.png"
+        },
+        "radiant:witch_pet": {
+            "textures": "textures/items/pets/witch.png"
         }
     }
 }
