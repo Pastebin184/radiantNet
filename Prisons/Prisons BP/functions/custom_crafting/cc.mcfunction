@@ -1,5 +1,5 @@
 scoreboard players set @a haste 0
-scoreboard players set @a miningFortune 0
+scoreboard players set @a miningFortune 5
 
 execute as @a[hasitem={location=slot.armor.head, item=radiant:black_iron_helmet}] run scoreboard players add @s haste 1
 execute as @a[hasitem={location=slot.armor.chest, item=radiant:black_iron_chestplate}] run scoreboard players add @s haste 1

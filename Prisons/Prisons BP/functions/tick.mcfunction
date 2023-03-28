@@ -1,4 +1,3 @@
-function levels/xp
 function mines/mines
 function shop/shop
 function misc/gamerules
