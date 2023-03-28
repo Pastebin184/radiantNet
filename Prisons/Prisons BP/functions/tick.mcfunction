@@ -16,4 +16,3 @@ function scoreboardadd
 function tellraw
 function tempac
 function gems/gem_shop
-function mines/mine_fill
