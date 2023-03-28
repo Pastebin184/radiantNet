@@ -1,0 +1,54 @@
+{
+    "format_version": "1.18.0",
+    "minecraft:item": {
+        "description": {
+            "identifier": "radiant:mithril_drill",
+            "category": "equipment"
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "parent": "itemGroup.name.pickaxe"
+            },
+            "minecraft:max_stack_size": 1,
+            "minecraft:hand_equipped": true,
+            "minecraft:foil": false,
+            "minecraft:icon": {
+                "texture": "prismarine_shard"
+            },
+            "minecraft:display_name": {
+                "value": "§3Mithril Drill"
+            },
+            "minecraft:durability": {
+                "max_durability": 1600,
+                "damage_chance": {
+                    "min": 1,
+                    "max": 2
+                }
+            },
+            "minecraft:digger": {
+                "destroy_speeds": [
+                    {
+                        "block": {
+                            "tags": "query.any_tag('stone', 'metal')"
+                        },
+                        "speed": 15,
+                        "on_dig": {
+                            "event": "damage"
+                        }
+                    }
+                ],
+                "use_efficiency": false
+             
+            }
+        },
+        "events": {
+            "damage": {
+                "damage": {
+                    "type": "magic",
+                    "amount": 1,
+                    "target": "self"
+                }
+            }
+        }
+    }
+}
