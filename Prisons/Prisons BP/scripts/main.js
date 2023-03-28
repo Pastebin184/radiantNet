@@ -188,7 +188,7 @@ system.runInterval(() => {
 )
 
 system.runInterval(() => {
-    let player = getAllPlayers()[i]
+    let player = world.getAllPlayers()[i]
     for (let i = 0; world.getAllPlayers().length > i; i++) {
 
         if (!world.getAllPlayers()[i].hasTag('banned')) return
@@ -204,7 +204,7 @@ system.runInterval(() => {
 )
 
 system.runInterval(() => {
-    let player = getAllPlayers()[i]
+    let player = world.getAllPlayers()[i]
     for (let i = 0; world.getAllPlayers().length > i; i++) {
 
     if (!world.getAllPlayers()[i].getObjective('miningFortune').getScore(player.scoreboard) / 5 > 1) return player.scores.effectiveMiningFortune == 1
