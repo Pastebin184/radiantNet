@@ -2,6 +2,10 @@
   "format_version": "1.16.0",
   "radiant:kothblock": {
     "textures": "kothblock",
-    "sound":"grass"
+    "sound": "grass"
+  },
+  "radiant:titanium_ore": {
+    "textures": "stone_diorite",
+    "sound": "stone"
   }
 }
