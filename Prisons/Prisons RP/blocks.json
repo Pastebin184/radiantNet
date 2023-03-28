@@ -5,7 +5,7 @@
     "sound": "grass"
   },
   "radiant:titanium_ore": {
-    "textures": "stone_diorite",
+    "textures": "titanium_ore",
     "sound": "stone"
   }
 }

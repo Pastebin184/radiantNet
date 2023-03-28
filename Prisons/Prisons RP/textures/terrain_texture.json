@@ -6,6 +6,9 @@
     "texture_data": {
         "kothblock": {
             "textures": "textures/blocks/kothblock"
+        },
+        "titanium_ore": {
+            "textures": "textures/blocks/stone_diorite"
         }
     }
 }
