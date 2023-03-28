@@ -2,7 +2,7 @@
     "format_version": "1.18.0",
     "minecraft:item": {
         "description": {
-            "identifier": "radiant:mithril_drill",
+            "identifier": "radiant:diamond_drill",
             "category": "equipment"
         },
         "components": {
@@ -16,7 +16,7 @@
                 "texture": "prismarine_shard"
             },
             "minecraft:display_name": {
-                "value": "§3Mithril Drill§e\n\n§7Mining Fortune §a+120§f"
+                "value": "§3Diamond Drill§e\n\n§7Mining Fortune §a+240§f"
             },
             "minecraft:durability": {
                 "max_durability": 32767,

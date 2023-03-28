@@ -1,6 +1,8 @@
-import { world, system, DynamicPropertiesDefinition, MinecraftEntityTypes, MinecraftEffectTypes, ItemStack} from "@minecraft/server";
+import { world, system, DynamicPropertiesDefinition, MinecraftEntityTypes, MinecraftEffectTypes, ItemStack } from "@minecraft/server";
 import { CommandManager, commandPrefix, bypass, getPlayerArg, Commands, toTicks, findRank } from './utils.js'
 import "./api.js"
+
+const block = ['coal', 'raw_iron', 'raw_copper', 'raw_gold', 'lapis_lazuli', 'redstone', 'diamond', 'netherrack', 'quartz', 'ancient_debris', 'emerald', 'end_stone', 'obsidian', 'iron_block', 'gold_block', 'lapis_block', 'redstone_block', 'diamond_block', 'emerald_block', 'netherite_block']
 
 world.events.worldInitialize.subscribe((data) => {
     const v = new DynamicPropertiesDefinition()
@@ -50,7 +52,7 @@ world.events.playerSpawn.subscribe(({ player, initialSpawn }) => {
         player.runCommandAsync(`kick ${player} §4You have been banned from Radiant Prisons`)
     }
     Commands.cache.get("spawn").callback({ player, args: [] })
-    
+
 })
 
 CommandManager.create({
@@ -186,14 +188,32 @@ system.runInterval(() => {
 )
 
 system.runInterval(() => {
+    let player = getAllPlayers()[i]
     for (let i = 0; world.getAllPlayers().length > i; i++) {
 
         if (!world.getAllPlayers()[i].hasTag('banned')) return
         world.getAllPlayers()[i].hasTag('banned').runCommandAsync(`kick ${world.getAllPlayers()[i].name}`)
-
-    } 
+        if (!world.getAllPlayers()[i].getObjective('miningFortune').getScore(player.scoreboard) / 5 > 1) return player.scores.effectiveMiningFortune == 1
+        player.scores.effectiveMiningFortune == Math.floor(player.getObjective('miningFortune').getScore(player.scoreboard) / 5)
+        for (let x = 0; block.length > x; x++) {
+            player.runCommandAsync(`execute as ${player.name}[hasitem={item=${block[x]}} run give ${player.name} ${block[x]} ${player.scores.effectiveMiningFortune + 1}]`)
+        }
+    }
 },
-toTicks(1)
+    toTicks(1)
 )
 
+system.runInterval(() => {
+    let player = getAllPlayers()[i]
+    for (let i = 0; world.getAllPlayers().length > i; i++) {
+
+    if (!world.getAllPlayers()[i].getObjective('miningFortune').getScore(player.scoreboard) / 5 > 1) return player.scores.effectiveMiningFortune == 1
+    player.scores.effectiveMiningFortune == Math.floor(player.getObjective('miningFortune').getScore(player.scoreboard) / 5)
+    for (let x = 0; block.length > x; x++) {
+        player.runCommandAsync(`execute as ${player.name}[hasitem={item=${block[x]}} run give ${player.name} ${block[x]} ${player.scores.effectiveMiningFortune + 1}]`)
+    }
+}
+},
+1
+)
 

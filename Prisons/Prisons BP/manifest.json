@@ -2,9 +2,9 @@
 {
     "format_version": 2,
     "header": {
-    "name": "Radiant Prisons BP v2.05",
+    "name": "Radiant Prisons BP v2.06",
     "description": "Behaviors for Radiant Prisons",
-    "uuid": "1b7c059e-470a-44e7-8b74-0d9cd6e56568",
+    "uuid": "af4569cc-5120-4280-a7f1-54aa6e6c9342",
       "version": [1,0,0],
       "min_engine_version": [1,19,63]
     },
