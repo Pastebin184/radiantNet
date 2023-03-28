@@ -188,32 +188,28 @@ system.runInterval(() => {
 )
 
 system.runInterval(() => {
-    let player = world.getAllPlayers()[i]
     for (let i = 0; world.getAllPlayers().length > i; i++) {
-
+        let player = world.getAllPlayers()[i]
         if (!world.getAllPlayers()[i].hasTag('banned')) return
         world.getAllPlayers()[i].hasTag('banned').runCommandAsync(`kick ${world.getAllPlayers()[i].name}`)
-        if (!world.getAllPlayers()[i].getObjective('miningFortune').getScore(player.scoreboard) / 5 > 1) return player.scores.effectiveMiningFortune == 1
-        player.scores.effectiveMiningFortune == Math.floor(player.getObjective('miningFortune').getScore(player.scoreboard) / 5)
-        for (let x = 0; block.length > x; x++) {
-            player.runCommandAsync(`execute as ${player.name}[hasitem={item=${block[x]}} run give ${player.name} ${block[x]} ${player.scores.effectiveMiningFortune + 1}]`)
-        }
     }
 },
     toTicks(1)
 )
 
 system.runInterval(() => {
-    let player = world.getAllPlayers()[i]
     for (let i = 0; world.getAllPlayers().length > i; i++) {
-
-    if (!world.getAllPlayers()[i].getObjective('miningFortune').getScore(player.scoreboard) / 5 > 1) return player.scores.effectiveMiningFortune == 1
-    player.scores.effectiveMiningFortune == Math.floor(player.getObjective('miningFortune').getScore(player.scoreboard) / 5)
-    for (let x = 0; block.length > x; x++) {
-        player.runCommandAsync(`execute as ${player.name}[hasitem={item=${block[x]}} run give ${player.name} ${block[x]} ${player.scores.effectiveMiningFortune + 1}]`)
+        let player = world.getAllPlayers()[i]
+        console.error(world.scoreboard.getObjective('effMiningFortune').getScore(player.scoreboard))
+        if ((!world.scoreboard.getObjective('miningFortune').getScore(player.scoreboard) / 5) > 0) return world.scoreboard.getObjective('effMiningFortune').setScore(player.scoreboard, 1)
+        let eMF = Math.floor(world.scoreboard.getObjective('miningFortune').getScore(player.scoreboard) / 5)
+        world.scoreboard.getObjective("effMiningFortune").setScore(player.scoreboard, eMF)
+        for (let x = 0; block.length > x; x++) {
+            let item = block[x]
+            player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run give @s ${item} ${eMF}`)
+        }
     }
-}
 },
-1
+    1
 )
 

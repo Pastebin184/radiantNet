@@ -4,7 +4,7 @@ execute as @a[hasitem={item=coal}] run give @s re_coal 1 0
 execute as @a run clear @a[hasitem={item=coal}] coal 0 1
 execute as @a[hasitem={item=raw_copper}] run scoreboard players add @s money 1
 execute as @a[hasitem={item=raw_copper}] run scoreboard players add @s xpSell 1
-execute as @a[hasitem={raw_copper}] run give @s re_copper_ingot 1 0
+execute as @a[hasitem={item=raw_copper}] run give @s re_copper_ingot 1 0
 execute as @a run clear @a[hasitem={item=raw_copper}] raw_copper 0 1
 execute as @a[hasitem={item=raw_iron}] run scoreboard players add @s money 3
 execute as @a[hasitem={item=raw_iron}] run scoreboard players add @s xpSell 8
@@ -32,7 +32,7 @@ execute as @a[hasitem={item=netherrack}] run give @s re_netherrack 1 0
 execute as @a run clear @a[hasitem={item=netherrack}] netherrack 0 1
 execute as @a[hasitem={item=quartz}] run scoreboard players add @s money 9
 execute as @a[hasitem={item=quartz}] run scoreboard players add @s xpSell 40
-execute as @a[hasitem={item+quartz}] run give @s re_quartz 1 0
+execute as @a[hasitem={item=quartz}] run give @s re_quartz 1 0
 execute as @a run clear @a[hasitem={item=quartz}] quartz 0 1
 execute as @a[hasitem={item=ancient_debris}] run scoreboard players add @s money 10
 execute as @a[hasitem={item=ancient_debris}] run scoreboard players add @s xpSell 300
