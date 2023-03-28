@@ -2,7 +2,7 @@
     "format_version": "1.16.100",
     "minecraft:item": {
         "description": {
-            "identifier": "radiant:re_copper_ingot",
+            "identifier": "radiant:re_raw_copper",
             "category": "items"
         },
         "components": {

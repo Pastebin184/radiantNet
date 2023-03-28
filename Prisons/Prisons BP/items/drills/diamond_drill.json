@@ -16,7 +16,7 @@
                 "texture": "prismarine_shard"
             },
             "minecraft:display_name": {
-                "value": "§3Diamond Drill§e\n\n§7Mining Fortune §a+240§f\n§7Mining Speed §a+75§f"
+                "value": "§3Diamond Drill§e\n\n§7Mining Fortune §a+120§f\n§7Mining Speed §a+75§f"
             },
             "minecraft:durability": {
                 "max_durability": 32767,

@@ -2,7 +2,7 @@
     "format_version": "1.18.0",
     "minecraft:item": {
         "description": {
-            "identifier": "radiant:mithril_drill",
+            "identifier": "radiant:gold_drill",
             "category": "equipment"
         },
         "components": {
@@ -16,7 +16,7 @@
                 "texture": "prismarine_shard"
             },
             "minecraft:display_name": {
-                "value": "§3Mithril Drill§e\n\n§7Mining Fortune §a+240§f\n§7Mining Speed §a+45§f"
+                "value": "§6Gold Drill§e\n\n§7Mining Fortune §a+50§f\n§7Mining Speed §a+20§f"
             },
             "minecraft:durability": {
                 "max_durability": 32767,
@@ -31,7 +31,7 @@
                         "block": {
                             "tags": "query.any_tag('stone', 'metal','diamond_pick_diggable')"
                         },
-                        "speed": 45,
+                        "speed": 20,
                         "on_dig": {
                             "event": "damage"
                         }
