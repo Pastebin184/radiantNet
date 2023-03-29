@@ -2,6 +2,17 @@ execute as @a[hasitem={item=radiant:wood_pickaxe}] if score @s money matches 0..
 execute as @a[hasitem={item=radiant:wood_pickaxe}] if score @s money matches 0.. run tellraw @s {"rawtext": [{"text": "§l§aPurchase Succeeded!"}]}
 execute as @a[hasitem={item=radiant:wood_pickaxe}] run clear @s radiant:wood_pickaxe
 
+execute as @a[hasitem={item=radiant:divans_alloy_display}] if score @s money matches 150000000.. run give @s radiant:divans_alloy_display 1 0
+execute as @a[hasitem={item=radiant:divans_alloy_display}] if score @s money matches 150000000.. run tellraw @s {"rawtext": [{"text": "§l§aPurchase Succeeded!"}]}
+execute as @a[hasitem={item=radiant:divans_alloy_display}] if score @s money matches 150000000.. run scoreboard players remove @s money 150000000
+execute as @a[hasitem={item=radiant:divans_alloy_display}] run clear @s radiant:divans_alloy_display
+
+execute as @a[hasitem={item=radiant:divans_core_display}] if score @s money matches 500000000.. run give @s radiant:divans_core_display 1 0
+execute as @a[hasitem={item=radiant:divans_core_display}] if score @s money matches 500000000.. run tellraw @s {"rawtext": [{"text": "§l§aPurchase Succeeded!"}]}
+execute as @a[hasitem={item=radiant:divans_core_display}] if score @s money matches 500000000.. run scoreboard players remove @s money 500000000
+execute as @a[hasitem={item=radiant:divans_core_display}] run clear @s radiant:divans_core_display
+
+
 execute as @a[hasitem={item=radiant:stone_pickaxe}] if score @s money matches 100.. run give @s stone_pickaxe 1 0 {"minecraft:can_destroy":{"blocks":["coal_ore","copper_ore","iron_ore","gold_ore","lapis_ore","redstone_ore","lit_redstone_ore","diamond_ore","netherrack","quartz_ore","ancient_debris","emerald_ore","end_stone","obsidian","iron_block","gold_block","lapis_block","redstone_block","diamond_block","emerald_block","netherite_block","lodestone"]},"keep_on_death":{}}
 execute as @a[hasitem={item=radiant:stone_pickaxe}] if score @s money matches 100.. run tellraw @s {"rawtext": [{"text": "§l§aPurchase Succeeded!"}]}
 execute as @a[hasitem={item=radiant:stone_pickaxe}] if score @s money matches 100.. run scoreboard players remove @s money 100
@@ -94,6 +105,9 @@ execute as @a[hasitem={item=radiant:netherite_chestplate}] if score @s money mat
 execute as @a[hasitem={item=radiant:netherite_chestplate}] if score @s money matches 5000000.. run tellraw @s {"rawtext": [{"text": "§l§aPurchase Succeeded!"}]}
 execute as @a[hasitem={item=radiant:netherite_chestplate}] if score @s money matches 5000000.. run scoreboard players remove @s money 5000000
 execute as @a[hasitem={item=radiant:netherite_chestplate}] run clear @s radiant:netherite_chestplate
+
+
+
 
 clear @a radiant:filler
 

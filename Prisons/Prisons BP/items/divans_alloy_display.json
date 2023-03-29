@@ -10,7 +10,7 @@
             "minecraft:hand_equipped": false,
             "minecraft:foil": true,
             "minecraft:icon": { "texture": "gold_nugget" },
-            "minecraft:display_name": { "value": "§gDivan's Core\n§8Used to craft §bDivan's Armor" },
+            "minecraft:display_name": { "value": "§a($150M)§gDivan's Core\n§8Used to craft §bDivan's Armor" },
             "minecraft:creative_category": {
                 "parent": "itemGroup.name.sword"
             },
