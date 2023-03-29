@@ -1,0 +1,20 @@
+{
+	"format_version": "1.17.41",
+	
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "radiant:enhanced_netherrack"
+		},
+		"tags": ["crafting_table"],
+
+		"pattern": [
+			"XXX",
+			"XXX",
+            "XXX"
+		],
+		"key": {
+			"X": "radiant:compact_netherrack"
+		},
+		"result": "radiant:enhanced_netherrack"
+	}
+}

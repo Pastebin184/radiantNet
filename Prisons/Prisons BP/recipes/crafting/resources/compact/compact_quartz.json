@@ -1,0 +1,20 @@
+{
+	"format_version": "1.17.41",
+	
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "radiant:compact_quartz"
+		},
+		"tags": ["crafting_table"],
+
+		"pattern": [
+			"XXX",
+			"XXX",
+            "XXX"
+		],
+		"key": {
+			"X": "radiant:re_quartz"
+		},
+		"result": "radiant:compact_quartz"
+	}
+}
