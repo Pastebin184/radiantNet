@@ -1,0 +1,21 @@
+{
+	"format_version": "1.17.41",
+	
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "radiant:divans_chestplate"
+		},
+		"tags": ["crafting_table"],
+
+		"pattern": [
+			"X X",
+			"XYX",
+            "XXX"
+		],
+		"key": {
+			"X": "radiant:enchanted_gold_ingot",
+            "Y": "radiant:divans_alloy"
+		},
+		"result": "radiant:divans_chestplate"
+	}
+}
