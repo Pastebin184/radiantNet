@@ -13,7 +13,7 @@
 				"texture": "radiant:black_iron_helmet"
 			},
 			"minecraft:display_name": {
-				"value": "Black Iron Helmet"
+				"value": "Black Iron Helmet\n\n§7Mining Fortune §a+30§f"
 			},
 			"minecraft:max_stack_size": 1,
 			"minecraft:enchantable": {
