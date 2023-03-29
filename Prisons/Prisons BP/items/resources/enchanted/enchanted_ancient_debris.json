@@ -9,7 +9,7 @@
             "minecraft:max_stack_size": 64,
             "minecraft:hand_equipped": false,
             "minecraft:foil": true,
-            "minecraft:icon": { "texture": "ancient_debris" },
+            "minecraft:icon": { "texture": "radiant:ancient_debris" },
             "minecraft:display_name": { "value": "Enchanted Ancient Debris" },
             "minecraft:creative_category": {
                 "parent": "itemGroup.name.sword"
