@@ -166,21 +166,22 @@
         },
         "radiant:witch_pet": {
             "textures": "textures/items/pets/witch.png"
+        },                 
+        "radiant:divans_helmet": {
+            "textures": "textures/items/gold_helmet.png"
+        },
+        "radiant:divans_chestplate": {
+            "textures": "textures/items/gold_chestplate.png"
+        },
+        "radiant:divans_leggings": {
+            "textures": "textures/items/gold_leggings.png"
+        },
+        "radiant:divans_boots": {
+            "textures": "textures/items/gold_boots.png"
+        },
+        "radiant:lapis_lazuli": {
+            "textures": "textures/items/dye_powder_blue.png"
         }
-    },
-    "radiant:divans_helmet": {
-        "textures": "textures/items/gold_helmet.png"
-    },
-    "radiant:divans_chestplate": {
-        "textures": "textures/items/gold_chestplate.png"
-    },
-    "radiant:divans_leggings": {
-        "textures": "textures/items/gold_leggings.png"
-    },
-    "radiant:divans_boots": {
-        "textures": "textures/items/gold_boots.png"
-    },
-    "radiant:lapis_lazuli": {
-        "textures": "textures/items/dye_powder_blue.png"
     }
 }
+

@@ -204,10 +204,7 @@ system.runInterval(() => {
         if ((!world.scoreboard.getObjective('miningFortune').getScore(player.scoreboard) / 5) > 0) return world.scoreboard.getObjective('effMiningFortune').setScore(player.scoreboard, 1)
         let eMF = Math.floor(world.scoreboard.getObjective('miningFortune').getScore(player.scoreboard) / 5)
         world.scoreboard.getObjective("effMiningFortune").setScore(player.scoreboard, eMF)
-        console.error(inventory.getItem(2).typeId.slice(10))
     for (let y = 0; y < 27; y++) {
-        for (let x = 0; block.length > x; x++) {
-            let item = block[x]
             switch (inventory.getItem(y).typeId.slice(10)) {
                 case 'coal':
                     player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run give @s ${item} ${eMF}`)
@@ -326,8 +323,7 @@ system.runInterval(() => {
                 }
 
         }}
-    }
-},
+    },
     5
 )
 
