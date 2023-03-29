@@ -9,8 +9,8 @@
             "minecraft:max_stack_size": 1,
             "minecraft:hand_equipped": false,
             "minecraft:foil": true,
-            "minecraft:icon": { "texture": "gold_ingot" },
-            "minecraft:display_name": { "value": "§gDivan's Core\n§8Used to craft §bDivan's Drill" },
+            "minecraft:icon": { "texture": "gold_nugget" },
+            "minecraft:display_name": { "value": "§gDivan's Core\n§8Used to craft §bDivan's Armor" },
             "minecraft:creative_category": {
                 "parent": "itemGroup.name.sword"
             },
