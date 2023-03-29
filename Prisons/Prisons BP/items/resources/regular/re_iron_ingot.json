@@ -2,7 +2,7 @@
     "format_version": "1.16.100",
     "minecraft:item": {
         "description": {
-            "identifier": "radiant:re_iron_ingot",
+            "identifier": "radiant:re_raw_iron",
             "category": "items"
         },
         "components": {

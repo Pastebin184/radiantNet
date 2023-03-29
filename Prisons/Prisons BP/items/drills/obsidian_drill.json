@@ -2,7 +2,7 @@
     "format_version": "1.18.0",
     "minecraft:item": {
         "description": {
-            "identifier": "radiant:divans_drill",
+            "identifier": "radiant:obsidian_drill",
             "category": "equipment"
         },
         "components": {
@@ -16,7 +16,7 @@
                 "texture": "prismarine_shard"
             },
             "minecraft:display_name": {
-                "value": "§bDivan's Drill§e\n\n§7Mining Fortune §a1500§f\n§7Mining Speed §a+300§f"
+                "value": "§0Obsidian Drill§e\n\n§7Mining Fortune §a300§f\n§7Mining Speed §a+100§f"
             },
             "minecraft:durability": {
                 "max_durability": 32767,
@@ -31,7 +31,7 @@
                         "block": {
                             "tags": "query.any_tag('stone', 'metal','diamond_pick_diggable')"
                         },
-                        "speed": 300,
+                        "speed": 100,
                         "on_dig": {
                             "event": "damage"
                         }

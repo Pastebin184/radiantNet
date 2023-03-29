@@ -11,6 +11,8 @@ execute as @a[hasitem={location=slot.weapon.mainhand,item=radiant:diamond_drill}
 execute as @a[hasitem={location=slot.weapon.mainhand,item=radiant:iron_drill}] run scoreboard players add @s miningFortune 35
 execute as @a[hasitem={location=slot.weapon.mainhand,item=radiant:gold_drill}] run scoreboard players add @s miningFortune 50
 execute as @a[hasitem={location=slot.weapon.mainhand,item=radiant:divans_drill}] run scoreboard players add @s miningFortune 1500
+execute as @a[hasitem={location=slot.weapon.mainhand,item=radiant:obsidian_drill}] run scoreboard players add @s miningFortune 300
+
 
 
 
