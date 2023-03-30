@@ -2,8 +2,6 @@ import { world, system, DynamicPropertiesDefinition, MinecraftEntityTypes, Minec
 import { CommandManager, commandPrefix, bypass, getPlayerArg, Commands, toTicks, findRank } from './utils.js'
 import "./api.js"
 
-const block = ['coal', 'raw_iron', 'raw_copper', 'raw_gold', 'lapis_lazuli', 'redstone', 'diamond', 'netherrack', 'quartz', 'ancient_debris', 'emerald', 'end_stone', 'obsidian', 'iron_block', 'gold_block', 'lapis_block', 'redstone_block', 'diamond_block', 'emerald_block', 'netherite_block']
-
 world.events.worldInitialize.subscribe((data) => {
     const v = new DynamicPropertiesDefinition()
     v.defineNumber("homeX")
@@ -103,8 +101,7 @@ CommandManager.create({
     target.sendMessage(`You have been warned by ${player}`)
     world.sendMessage(`${target} has been warned by ${player}`)
     console.error(world.scoreboard.getObjective('warnings').getScore(target.scoreboard))
-}
-)
+})
 
 
 
@@ -170,158 +167,129 @@ CommandManager.create({
         if (i === 9) for (let i = 9; i < 27; i++) blockInv.setItem(i, i > 17 ? bar2 : bar)
         blockInv.setItem(i > 8 ? i + 18 : i, plrInv.getItem(i) ?? undefined)
     }
-    player.message(`§3A chest has been placed near you with ${target.name}'s inventory.`)
+    player.sendMessage(`§3A chest has been placed near you with ${target.name}'s inventory.`)
 })
 
 
 
 
 
-system.runInterval(() => {
-    for (let i = 0; world.getAllPlayers().length > i; i++) {
-        console.error(world.getAllPlayers()[i].name)
-        if (!world.scoreboard.getObjective('warnings').getScore(world.getAllPlayers()[i].scoreboard) >= 5) return
-        world.getAllPlayers()[i].runCommandAsync(`kick ${world.getAllPlayers()[i].name}`)
-    }
-},
-    toTicks(2)
-)
+
 
 system.runInterval(() => {
-    for (let i = 0; world.getAllPlayers().length > i; i++) {
-        let player = world.getAllPlayers()[i]
-        if (!world.getAllPlayers()[i].hasTag('banned')) return
-        world.getAllPlayers()[i].hasTag('banned').runCommandAsync(`kick ${world.getAllPlayers()[i].name}`)
+    for (const player of world.getPlayers({ tags: ["banned"] })) {
+        player.runCommandAsync(`kick "${player.name}" YOU ARE BANNED YOU GOD DAMN IDIOT I HATE PASTEBIN GRR`)
     }
-},
-    toTicks(1)
-)
+}, toTicks(1))
 
 system.runInterval(() => {
-    for (let i = 0; world.getAllPlayers().length > i; i++) {
-        let player = world.getAllPlayers()[i]   
+    for (const player of world.getPlayers()) {
         const inventory = player.getComponent("inventory").container
         if ((!world.scoreboard.getObjective('miningFortune').getScore(player.scoreboard) / 5) > 0) return world.scoreboard.getObjective('effMiningFortune').setScore(player.scoreboard, 1)
-        let eMF = Math.floor(world.scoreboard.getObjective('miningFortune').getScore(player.scoreboard) / 5)
+        let eMF = Math.floor([world.scoreboard.getObjective('miningFortune').getScore(player.scoreboard)] / 5)
         world.scoreboard.getObjective("effMiningFortune").setScore(player.scoreboard, eMF)
-    for (let y = 0; y < 27; y++) {
-            switch (inventory.getItem(y).typeId.slice(10)) {
+        for (let y = 0; y < 36; y++) {
+            const item = inventory.getItem(y)?.typeId?.slice(10)
+            if (!item) continue
+            switch (item) {
                 case 'coal':
-                    player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run give @s ${item} ${eMF}`)
                     player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run give @s radiant:re_${item} ${eMF}`)
                     player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run scoreboard players add @s money ${1 * eMF}`)
                     player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run scoreboard players add @s xpSell ${1 * eMF}`)
                     player.runCommandAsync(`execute as @a run clear @a[hasitem={item=coal}] coal 0 ${eMF + 1}`)
                 case 'raw_copper':
-                    player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run give @s ${item} ${eMF}`)
+                    player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run give @s radiant:re_${item} ${eMF}`)
                     player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run scoreboard players add @s money ${1 * eMF}`)
                     player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run scoreboard players add @s xpSell ${2 * eMF}`)
                     player.runCommandAsync(`execute as @a run clear @a[hasitem={item=${item}}] ${item} 0 ${eMF + 1}`)
                 case 'raw_iron':
-                    player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run give @s ${item} ${eMF}`)
                     player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run give @s radiant:re_${item} ${eMF}`)
                     player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run scoreboard players add @s money ${2 * eMF}`)
                     player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run scoreboard players add @s xpSell ${3 * eMF}`)
                     player.runCommandAsync(`execute as @a run clear @a[hasitem={item=${item}}] ${item} 0 ${eMF + 1}`)
                 case 'raw_gold':
-                    player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run give @s ${item} ${eMF}`)
                     player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run give @s radiant:re_${item} ${eMF}`)
                     player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run scoreboard players add @s money ${3 * eMF}`)
                     player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run scoreboard players add @s xpSell ${4 * eMF}`)
                     player.runCommandAsync(`execute as @a run clear @a[hasitem={item=${item}}] ${item} 0 ${eMF + 1}`)
                 case 'lapis_lazuli':
-                    player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run give @s ${item} ${eMF}`)
                     player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run give @s radiant:re_${item} ${eMF}`)
                     player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run scoreboard players add @s money ${4 * eMF}`)
                     player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run scoreboard players add @s xpSell ${3 * eMF}`)
                     player.runCommandAsync(`execute as @a run clear @a[hasitem={item=${item}}] ${item} 0 ${eMF+1}`)
                 case 'redstone':
-                    player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run give @s ${item} ${eMF}`)
                     player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run give @s radiant:re_${item} ${eMF}`)
                     player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run scoreboard players add @s money ${4 * eMF}`)
                     player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run scoreboard players add @s xpSell ${5 * eMF}`)
                     player.runCommandAsync(`execute as @a run clear @a[hasitem={item=${item}}] ${item} 0 ${eMF+1}`)
                 case 'diamond':
-                    player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run give @s ${item} ${eMF}`)
                     player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run give @s radiant:re_${item} ${eMF}`)
                     player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run scoreboard players add @s money ${6 * eMF}`)
                     player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run scoreboard players add @s xpSell ${5 * eMF}`)
                     player.runCommandAsync(`execute as @a run clear @a[hasitem={item=${item}}] ${item} 0 ${eMF+1}`)
                 case 'netherrack':
-                    player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run give @s ${item} ${eMF}`)
                     player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run give @s radiant:re_${item} ${eMF}`)
                     player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run scoreboard players add @s money ${1 * eMF}`)
                     player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run scoreboard players add @s xpSell ${1 * eMF}`)
                     player.runCommandAsync(`execute as @a run clear @a[hasitem={item=${item}}] ${item} 0 ${eMF+1}`)
                 case 'quartz':
-                    player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run give @s ${item} ${eMF+1}`)
                     player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run give @s radiant:re_${item} ${eMF}`)
                     player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run scoreboard players add @s money ${9 * eMF}`)
                     player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run scoreboard players add @s xpSell ${10 * eMF}`)
                     player.runCommandAsync(`execute as @a run clear @a[hasitem={item=${item}}] ${item} 0 ${eMF+1}`)
                 case 'ancient_debris':
-                    player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run give @s ${item} ${eMF}`)
                     player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run give @s radiant:re_${item} ${eMF}`)
                     player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run scoreboard players add @s money ${15 * eMF}`)
                     player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run scoreboard players add @s xpSell ${15 * eMF}`)
                     player.runCommandAsync(`execute as @a run clear @a[hasitem={item=${item}}] ${item} 0 ${eMF+1}`)
                 case 'emerald':
-                    player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run give @s ${item} ${eMF}`)
                     player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run give @s radiant:re_${item} ${eMF}`)
                     player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run scoreboard players add @s money ${20 * eMF}`)
                     player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run scoreboard players add @s xpSell ${25 * eMF}`)
                     player.runCommandAsync(`execute as @a run clear @a[hasitem={item=${item}}] ${item} 0 ${eMF+1}`)
                 case 'end_stone':
-                    player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run give @s ${item} ${eMF}`)
                     player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run give @s radiant:re_${item} ${eMF}`)
                     player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run scoreboard players add @s money ${25 * eMF}`)
                     player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run scoreboard players add @s xpSell ${30 * eMF}`)
                     player.runCommandAsync(`execute as @a run clear @a[hasitem={item=${item}}] ${item} 0 ${eMF+1}`)
                 case 'obsidian':
-                    player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run give @s ${item} ${eMF}`)
                     player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run give @s radiant:re_${item} ${eMF}`)
                     player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run scoreboard players add @s money ${30 * eMF}`)
                     player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run scoreboard players add @s xpSell ${35 * eMF}`)
                     player.runCommandAsync(`execute as @a run clear @a[hasitem={item=${item}}] ${item} 0 ${eMF+1}`)
                 case 'iron_block':
-                    player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run give @s ${item} ${eMF}`)
                     player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run give @s radiant:re_${item} ${eMF}`)
                     player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run scoreboard players add @s money ${40 * eMF}`)
                     player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run scoreboard players add @s xpSell ${50 * eMF}`)
                     player.runCommandAsync(`execute as @a run clear @a[hasitem={item=${item}}] ${item} 0 ${eMF+1}`)
                 case 'gold_block':
-                    player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run give @s ${item} ${eMF}`)
                     player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run give @s radiant:re_${item} ${eMF}`)
                     player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run scoreboard players add @s money ${45 * eMF}`)
                     player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run scoreboard players add @s xpSell ${55 * eMF}`)
                     player.runCommandAsync(`execute as @a run clear @a[hasitem={item=${item}}] ${item} 0 ${eMF+1}`)
                 case 'redstone_block':
-                    player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run give @s ${item} ${eMF}`)
                     player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run give @s radiant:re_${item} ${eMF}`)
                     player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run scoreboard players add @s money ${50 * eMF}`)
                     player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run scoreboard players add @s xpSell ${60 * eMF}`)
                     player.runCommandAsync(`execute as @a run clear @a[hasitem={item=${item}}] ${item} 0 ${eMF+1}`)
                 case 'diamond_block':
-                    player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run give @s ${item} ${eMF}`)
                     player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run give @s radiant:re_${item} ${eMF}`)
                     player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run scoreboard players add @s money ${70 * eMF}`)
                     player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run scoreboard players add @s xpSell ${65 * eMF}`)
                     player.runCommandAsync(`execute as @a run clear @a[hasitem={item=${item}}] ${item} 0 ${eMF+1}`)
                 case 'emerald_block':
-                    player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run give @s ${item} ${eMF}`)
                     player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run give @s radiant:re_${item} ${eMF}`)
                     player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run scoreboard players add @s money ${75 * eMF}`)
                     player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run scoreboard players add @s xpSell ${70 * eMF}`)
                     player.runCommandAsync(`execute as @a run clear @a[hasitem={item=${item}}] ${item} 0 ${eMF+1}`)
                 case 'netherite_block':
-                    player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run give @s ${item} ${eMF}`)
                     player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run give @s radiant:re_${item} ${eMF}`)
                     player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run scoreboard players add @s money ${85 * eMF}`)
                     player.runCommandAsync(`execute as @a[hasitem={item=${item}}] run scoreboard players add @s xpSell ${90 * eMF}`)
                     player.runCommandAsync(`execute as @a run clear @a[hasitem={item=${item}}] ${item} 0 ${eMF+1}`)
+                    
                 default:
                 }
-
         }}
     },
     5
