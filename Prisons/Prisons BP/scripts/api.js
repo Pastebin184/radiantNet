@@ -3,6 +3,7 @@ import { bypass } from "./utils.js"
 
 const msg = Player.prototype.sendMessage
 const msgAll = World.prototype.sendMessage
+const objectiveCache = new Map()
 
 Object.defineProperties(Player.prototype, {
     home: {
@@ -26,14 +27,14 @@ Object.defineProperties(Player.prototype, {
             return new Proxy({}, {
                 get(_, property) {
                     try {
-                        return world.scoreboard.getObjective(property).getScore(player.scoreboard)
+                        return (objectiveCache.get(property) ?? objectiveCache.set(property, world.scoreboard.getObjective(property)).get(property)).getScore(player.scoreboard)
                     } catch {
                         return 0
                     }
                 },
                 set(_, property, value) {
                     try {
-                        world.scoreboard.getObjective(property).setScore(player.scoreboard, value)
+                        (objectiveCache.get(property) ?? objectiveCache.set(property, world.scoreboard.getObjective(property)).get(property)).setScore(player.scoreboard, value)
                     } catch {
                         player.runCommandAsync(`scoreboard players set @s "${property}" ${value}`)
                     }
