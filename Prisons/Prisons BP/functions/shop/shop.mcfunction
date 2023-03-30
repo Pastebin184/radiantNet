@@ -2,12 +2,12 @@ execute as @a[hasitem={item=radiant:wood_pickaxe}] if score @s money matches 0..
 execute as @a[hasitem={item=radiant:wood_pickaxe}] if score @s money matches 0.. run tellraw @s {"rawtext": [{"text": "§l§aPurchase Succeeded!"}]}
 execute as @a[hasitem={item=radiant:wood_pickaxe}] run clear @s radiant:wood_pickaxe
 
-execute as @a[hasitem={item=radiant:divans_alloy_display}] if score @s money matches 150000000.. run give @s radiant:divans_alloy_display 1 0
+execute as @a[hasitem={item=radiant:divans_alloy_display}] if score @s money matches 150000000.. run give @s radiant:divans_alloy 1 0
 execute as @a[hasitem={item=radiant:divans_alloy_display}] if score @s money matches 150000000.. run tellraw @s {"rawtext": [{"text": "§l§aPurchase Succeeded!"}]}
 execute as @a[hasitem={item=radiant:divans_alloy_display}] if score @s money matches 150000000.. run scoreboard players remove @s money 150000000
 execute as @a[hasitem={item=radiant:divans_alloy_display}] run clear @s radiant:divans_alloy_display
 
-execute as @a[hasitem={item=radiant:divans_core_display}] if score @s money matches 500000000.. run give @s radiant:divans_core_display 1 0
+execute as @a[hasitem={item=radiant:divans_core_display}] if score @s money matches 500000000.. run give @s radiant:divans_core 1 0
 execute as @a[hasitem={item=radiant:divans_core_display}] if score @s money matches 500000000.. run tellraw @s {"rawtext": [{"text": "§l§aPurchase Succeeded!"}]}
 execute as @a[hasitem={item=radiant:divans_core_display}] if score @s money matches 500000000.. run scoreboard players remove @s money 500000000
 execute as @a[hasitem={item=radiant:divans_core_display}] run clear @s radiant:divans_core_display

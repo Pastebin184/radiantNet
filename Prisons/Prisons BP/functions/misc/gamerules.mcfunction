@@ -3,3 +3,4 @@ gamerule domobspawning false
 gamerule dodaylightcycle false
 gamerule falldamage false
 gamerule dofiretick false
+gamerule sendcommandfeedback false
