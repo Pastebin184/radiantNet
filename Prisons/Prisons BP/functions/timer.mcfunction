@@ -61,5 +61,5 @@ execute if score xptimer timer matches 20.. run execute as @a[tag=doubleXp] run 
 execute if score xptimer timer matches 20.. run scoreboard players set xptimer timer 0
 
 scoreboard players add mineFill timer 1
-execute if score mine timer matches 12000.. run function mines/mine_fill
-execute if score mine timer matches 12000.. run scoreboard players set mineFill timer 0
+execute if score mineFill timer matches 12000.. run function mines/mine_fill
+execute if score mineFill timer matches 12000.. run scoreboard players set mineFill timer 0
