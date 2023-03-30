@@ -78,17 +78,16 @@ world.events.beforeChat.subscribe((data) => {
 const bypassedWords = {
     'fuck': 'fùck',
     'nigger': 'nígger',
+    'nigga': 'nígga',
     'retard': 'rètard',
     'shit': 'shít',
     'cum': 'cùm',
     'ass': 'àss',
-	'fatass': 'fàtass',
     'kys': 'kŷs',
     'chink': 'chínk',
-    
 }
 
-export const bypass = (str) => str.split(" ").map(v => bypassedWords[v.toLowerCase()] ?? v).join(" ")
+export const bypass = (str) => Object.keys(bypassedWords).reduce((p, v) => p.replaceAll(v, bypassedWords[v]), str)
 
 /**@param {string} args @param {Player} player */
 export function getPlayerArg(args) {
@@ -101,12 +100,11 @@ export function getPlayerArg(args) {
 }
 
 /**
- * 
- * @param {Number} seconds - seconds: amount of seconds  
+ * Converts a certain amount of seconds to ticks
+ * @param {number} seconds Amoount of seconds 
+ * @returns {number} The amount of ticks
  */
- export function toTicks(seconds) {
-    return (seconds*20)
-}
+export const toTicks = (seconds) => seconds * 20
 
 /**
  * 
