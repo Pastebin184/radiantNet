@@ -10,7 +10,7 @@
             "minecraft:hand_equipped": false,
             "minecraft:foil": false,
             "minecraft:icon": { "texture": "tropical_fish" },
-            "minecraft:display_name": { "value": "Raw Fish" },
+            "minecraft:display_name": { "value": "Raw Fish " },
             "minecraft:creative_category": {
                 "parent": "itemGroup.name.sword"
             },

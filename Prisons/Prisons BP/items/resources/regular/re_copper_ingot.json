@@ -10,7 +10,7 @@
             "minecraft:hand_equipped": false,
             "minecraft:foil": false,
             "minecraft:icon": { "texture": "copper_ingot" },
-            "minecraft:display_name": { "value": "Copper Ingot" },
+            "minecraft:display_name": { "value": "Copper Ingot " },
             "minecraft:creative_category": {
                 "parent": "itemGroup.name.sword"
             }

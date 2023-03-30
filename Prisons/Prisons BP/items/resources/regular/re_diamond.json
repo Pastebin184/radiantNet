@@ -10,7 +10,7 @@
             "minecraft:hand_equipped": false,
             "minecraft:foil": false,
             "minecraft:icon": { "texture": "diamond" },
-            "minecraft:display_name": { "value": "Diamond" },
+            "minecraft:display_name": { "value": "Diamond " },
             "minecraft:creative_category": {
                 "parent": "itemGroup.name.sword"
             }

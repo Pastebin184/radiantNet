@@ -10,7 +10,7 @@
             "minecraft:hand_equipped": false,
             "minecraft:foil": false,
             "minecraft:icon": { "texture": "radiant:netherrack" },
-            "minecraft:display_name": { "value": "Netherrack" },
+            "minecraft:display_name": { "value": "Netherrack " },
             "minecraft:creative_category": {
                 "parent": "itemGroup.name.sword"
             }

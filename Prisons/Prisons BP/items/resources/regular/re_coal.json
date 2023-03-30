@@ -10,7 +10,7 @@
             "minecraft:hand_equipped": false,
             "minecraft:foil": false,
             "minecraft:icon": { "texture": "coal" },
-            "minecraft:display_name": { "value": "Coal" },
+            "minecraft:display_name": { "value": "Coal " },
             "minecraft:creative_category": {
                 "parent": "itemGroup.name.sword"
             }

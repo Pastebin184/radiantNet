@@ -10,7 +10,7 @@
             "minecraft:hand_equipped": false,
             "minecraft:foil": false,
             "minecraft:icon": { "texture": "radiant:end_stone" },
-            "minecraft:display_name": { "value": "End Stone" },
+            "minecraft:display_name": { "value": "End Stone " },
             "minecraft:creative_category": {
                 "parent": "itemGroup.name.sword"
             }
