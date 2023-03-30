@@ -10,7 +10,7 @@
             "minecraft:hand_equipped": false,
             "minecraft:foil": false,
             "minecraft:icon": { "texture": "radiant:ancient_debris" },
-            "minecraft:display_name": { "value": "Ancient Debris" },
+            "minecraft:display_name": { "value": "Ancient Debris " },
             "minecraft:creative_category": {
                 "parent": "itemGroup.name.sword"
             }
