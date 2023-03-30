@@ -10,7 +10,7 @@
 				"parent": "itemGroup.name.leggings"
 			},
 			"minecraft:icon": {
-				"texture": "chainmail_leggings"
+				"texture": "radiant:chainmail_leggings"
 			},
 			"minecraft:display_name": {
 				"value": "Goblin Leggings\n\n§7Mining Fortune §a+100§f"

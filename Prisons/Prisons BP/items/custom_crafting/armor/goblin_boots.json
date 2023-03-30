@@ -10,7 +10,7 @@
 				"parent": "itemGroup.name.boots"
 			},
 			"minecraft:icon": {
-				"texture": "chainmail_boots"
+				"texture": "radiant:chainmail_boots"
 			},
 			"minecraft:display_name": {
 				"value": "Goblin Boots\n\n§7Mining Fortune §a+100§f"

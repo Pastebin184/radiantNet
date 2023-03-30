@@ -10,7 +10,7 @@
 				"parent": "itemGroup.name.helmet"
 			},
 			"minecraft:icon": {
-				"texture": "chainmail_helmet"
+				"texture": "radiant:chainmail_helmet"
 			},
 			"minecraft:display_name": {
 				"value": "Goblin Helmet\n\n§7Mining Fortune §a+100§f"

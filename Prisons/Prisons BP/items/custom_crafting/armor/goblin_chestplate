@@ -10,10 +10,10 @@
 				"parent": "itemGroup.name.chestplate"
 			},
 			"minecraft:icon": {
-				"texture": "chainmail_chestplate"
+				"texture": "radiant:chainmail_chestplate"
 			},
 			"minecraft:display_name": {
-				"value": "Black Iron chestplate\n\n§7Mining Fortune §a+100§f"
+				"value": "Goblin Chestplate\n\n§7Mining Fortune §a+100§f"
 			},
 			"minecraft:max_stack_size": 1,
 			"minecraft:enchantable": {
