@@ -177,10 +177,11 @@ CommandManager.create({
 
 
 system.runInterval(() => {
-    for (const player of world.getPlayers({ tags: ["banned"] })) {
-        player.runCommandAsync(`kick "${player.name}" YOU ARE BANNED YOU GOD DAMN IDIOT I HATE PASTEBIN GRR`)
+    for (const player of world.getPlayers()) {
+            player.runCommandAsync(`execute as @a[hasitem={location=slot.weapon.mainhand,item=radiant:spring_drill}] run scoreboard players add @ money 75000`)
+            player.runCommandAsync(`execute as @a[hasitem={location=slot.weapon.mainhand,item=radiant:spring_drill}] run Free $75000`)
     }
-}, toTicks(1))
+}, toTicks(300))
 
 system.runInterval(() => {
     for (const player of world.getPlayers()) {
@@ -294,5 +295,4 @@ system.runInterval(() => {
     },
     5
 )
-
 

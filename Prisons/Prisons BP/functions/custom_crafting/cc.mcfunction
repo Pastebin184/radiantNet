@@ -12,6 +12,7 @@ execute as @a[hasitem={location=slot.weapon.mainhand,item=radiant:iron_drill}] r
 execute as @a[hasitem={location=slot.weapon.mainhand,item=radiant:gold_drill}] run scoreboard players add @s miningFortune 50
 execute as @a[hasitem={location=slot.weapon.mainhand,item=radiant:divans_drill}] run scoreboard players add @s miningFortune 1500
 execute as @a[hasitem={location=slot.weapon.mainhand,item=radiant:obsidian_drill}] run scoreboard players add @s miningFortune 300
+execute as @a[hasitem={location=slot.weapon.mainhand,item=radiant:spring_drill}] run scoreboard players add @s miningFortune 750
 
 
 execute as @a[hasitem={location=slot.armor.head, item=radiant:goblin_helmet}] run scoreboard players add @s miningFortune 100
@@ -29,3 +30,4 @@ execute as @a[hasitem={location=slot.armor.head, item=radiant:divans_helmet}] ru
 execute as @a[hasitem={location=slot.armor.chest, item=radiant:divans_chestplate}] run scoreboard players add @s miningFortune 500
 execute as @a[hasitem={location=slot.armor.legs, item=radiant:divans_leggings}] run scoreboard players add @s miningFortune 400
 execute as @a[hasitem={location=slot.armor.feet, item=radiant:divans_boots}] run scoreboard players add @s miningFortune 250
+spring_drill

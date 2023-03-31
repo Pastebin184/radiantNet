@@ -9,7 +9,7 @@
             "minecraft:max_stack_size": 1,
             "minecraft:hand_equipped": false,
             "minecraft:foil": true,
-            "minecraft:icon": { "texture": "iron_bars" },
+            "minecraft:icon": { "texture": "apple" },
             "minecraft:display_name": { "value": "§gPersonal Compactor\n§8Automatically Crafts Tiered Items" },
             "minecraft:creative_category": {
                 "parent": "itemGroup.name.sword"
