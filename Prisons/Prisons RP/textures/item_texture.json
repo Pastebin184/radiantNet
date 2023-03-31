@@ -183,7 +183,7 @@
             "textures": "textures/items/dye_powder_blue.png"
         },
         "radiant:chainmail_boots": {
-            "textures": "textures/items/chaimmail_boots"
+            "textures": "textures/items/chainmail_boots"
         },
         "radiant:chainmail_leggings": {
             "textures": "textures/items/chainmail_leggings"
