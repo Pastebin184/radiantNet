@@ -16,6 +16,6 @@
 			"Y": "radiant:divans_core",
             "X": "radiant:enchanted_gold_ingot"
 		},
-		"result": "radiant:divans_drill"
+		"result": "radiant:divans_drill_display"
 	}
 }

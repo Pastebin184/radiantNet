@@ -16,6 +16,6 @@
 			"Y": "radiant:enchanted_gold_ingot",
             "X": "radiant:enchanted_obsidian"
 		},
-		"result": "radiant:obsidian_drill"
+		"result": "radiant:obsidian_drill_display"
 	}
 }

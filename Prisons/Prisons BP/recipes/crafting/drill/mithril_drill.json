@@ -17,6 +17,6 @@
             "X": "radiant:enchanted_iron",
 			"Z": "radiant:enchanted_obsidian"
 		},
-		"result": "radiant:mithril_drill"
+		"result": "radiant:mithril_drill_display"
 	}
 }

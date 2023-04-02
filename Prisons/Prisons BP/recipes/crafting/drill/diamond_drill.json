@@ -16,6 +16,6 @@
 			"Y": "radiant:enchanted_gold_ingot",
             "X": "radiant:enchanted_diamond"
 		},
-		"result": "radiant:diamond_drill"
+		"result": "radiant:diamond_drill_display"
 	}
 }

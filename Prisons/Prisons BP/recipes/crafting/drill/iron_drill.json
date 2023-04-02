@@ -16,6 +16,6 @@
 			"Y": "radiant:enchanted_gold_ingot",
             "X": "radiant:enchanted_iron_ingot"
 		},
-		"result": "radiant:iron_drill"
+		"result": "radiant:iron_drill_display"
 	}
 }
