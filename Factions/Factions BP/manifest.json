@@ -18,7 +18,7 @@
         "language": "javascript",
         "uuid": "a99c612c-e2ff-4dd2-a3a4-8be2e5e82d39",
         "version": [1,0,0],
-        "entry": "scripts/scripts.js"
+        "entry": "scripts/index.js"
       }
     ],
     "dependencies": [
