@@ -1,0 +1,33 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "radiant:shining_kit",
+            "category": "items"
+        },
+        "components": {
+            "minecraft:max_stack_size": 64,
+            "minecraft:hand_equipped": true,
+            "minecraft:foil": true,
+            "minecraft:icon": { "texture": "snowball" },
+            "minecraft:display_name": { "value": "§l§bShining Kit Voucher\n§fContains:\n§lProtection 3 Diamond Chestplate\nNetherite Leggings\nNetherite Helmet\nDiamond Boots\nNetherite Sword" },
+            "minecraft:creative_category": {
+                "parent": "itemGroup.name.sword"
+            },
+            "minecraft:on_use":{
+                "on_use": {
+                    "event": "open"
+                }
+            }
+        },
+        "events": {
+            "open": {
+                "run_command": {
+                    "command": [
+                        "function kits/shining"
+                    ]
+                }
+            }
+        }
+    }
+}
