@@ -1,0 +1,19 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "radiant:brickDisplay",
+            "category": "items"
+        },
+        "components": {
+            "minecraft:max_stack_size": 64,
+            "minecraft:hand_equipped": true,
+            "minecraft:foil": true,
+            "minecraft:icon": { "texture": "brick" },
+            "minecraft:display_name": { "value": "Brick Blocks x64 $200" },
+            "minecraft:creative_category": {
+                "parent": "itemGroup.name.sword"
+            }
+        }
+    }
+}
