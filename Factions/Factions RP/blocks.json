@@ -1,0 +1,7 @@
+{
+    "format_version": "1.16.0",
+    "radiant:sellpad": {
+      "textures": "sellpad",
+      "sound": "grass"
+    }
+}
