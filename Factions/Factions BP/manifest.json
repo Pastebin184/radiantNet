@@ -1,9 +1,9 @@
 {
     "format_version": 2,
     "header": {
-      "name": "Radiant Factions BH v0.03",
+      "name": "Radiant Factions BH v0.04",
       "description": "Features for Radiant Factions",
-      "uuid": "7f511e3e-d6b8-4628-80ce-104e7f593a09",
+      "uuid": "d985e25e-f052-4c69-a131-35b7f7c0b966",
       "version": [1,0,0],
       "min_engine_version": [1,19,63]
     },
