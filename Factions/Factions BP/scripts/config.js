@@ -1,4 +1,0 @@
-export {prefix}
-
-
-const prefix = "-" 

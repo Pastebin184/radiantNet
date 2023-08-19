@@ -1,38 +1,50 @@
 {
-    "format_version": 2,
-    "header": {
-      "name": "Radiant Factions BH v0.04",
-      "description": "Features for Radiant Factions",
-      "uuid": "d985e25e-f052-4c69-a131-35b7f7c0b966",
-      "version": [1,0,0],
-      "min_engine_version": [1,19,63]
-    },
-    "modules": [
+  "format_version": 2,
+  "header": {
+      "name": "Radiant Factions BP 0.05",
+      "description": "Behaviors for Radiant Factions by Pastie",
+      "uuid": "9f39b5d0-e435-4ffd-a006-5808a61451a2",
+      "min_engine_version": [
+          1,
+          20,
+          0
+      ],
+      "version": [
+          1,
+          0,
+          0
+      ]
+  },
+  "modules": [
       {
-        "type": "data",
-        "uuid": "642c176b-5323-49c5-afdb-a7d0227c9620",
-        "version": [1,0,0]
+          "type": "script",
+          "language": "javascript",
+          "entry": "scripts/index.js",
+          "uuid": "bfb9d8c6-137b-4a5f-a15a-2bf73eac9343",
+          "version": [
+              1,
+              0,
+              0
+          ]
       },
       {
-        "type": "script",
-        "language": "javascript",
-        "uuid": "a99c612c-e2ff-4dd2-a3a4-8be2e5e82d39",
-        "version": [1,0,0],
-        "entry": "scripts/index.js"
+          "type": "data",
+          "uuid": "73e0e8c1-796c-4a5c-aa28-1d65ac96e372",
+          "version": [
+              1,
+              0,
+              0
+          ]
       }
-    ],
-    "dependencies": [
-      { 
+  ],
+  "dependencies": [
+      {
           "module_name": "@minecraft/server",
-          "version": "1.1.0-beta"
+          "version": "1.4.0-beta"
       },
-      { 
+      {
           "module_name": "@minecraft/server-ui",
-          "version": "1.0.0-beta"
-      },
-      { 
-        "module_name": "@minecraft/server-gametest",
-        "version": "1.0.0-beta"
-    }
+          "version": "1.2.0-beta"
+      }
   ]
 }
