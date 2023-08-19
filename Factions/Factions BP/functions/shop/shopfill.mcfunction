@@ -1,0 +1,29 @@
+replaceitem entity @e[type=radiant:shop] slot.inventory 0 brickDisplay
+replaceitem entity @e[type=radiant:shop] slot.inventory 0 brickDisplay
+replaceitem entity @e[type=radiant:shop] slot.inventory 0 logdisplay
+replaceitem entity @e[type=radiant:shop] slot.inventory 0 stonedisplay
+replaceitem entity @e[type=radiant:shop] slot.inventory 0 brickDisplay
+replaceitem entity @e[type=radiant:shop] slot.inventory 0 obsisdiandisplay
+replaceitem entity @e[type=radiant:shop] slot.inventory 0 brickDisplay
+replaceitem entity @e[type=radiant:shop] slot.inventory 0 brickDisplay
+replaceitem entity @e[type=radiant:shop] slot.inventory 0 brickDisplay
+
+replaceitem entity @e[type=radiant:shop] slot.inventory 0 brickDisplay
+replaceitem entity @e[type=radiant:shop] slot.inventory 0 brickDisplay
+replaceitem entity @e[type=radiant:shop] slot.inventory 0 ironingotdisplay
+replaceitem entity @e[type=radiant:shop] slot.inventory 0 goldingotdisplay
+replaceitem entity @e[type=radiant:shop] slot.inventory 0 diamonddisplay
+replaceitem entity @e[type=radiant:shop] slot.inventory 0 redstonedisplay
+replaceitem entity @e[type=radiant:shop] slot.inventory 0 brickDisplay
+replaceitem entity @e[type=radiant:shop] slot.inventory 0 brickDisplay
+replaceitem entity @e[type=radiant:shop] slot.inventory 0 brickDisplay
+
+replaceitem entity @e[type=radiant:shop] slot.inventory 0 brickDisplay
+replaceitem entity @e[type=radiant:shop] slot.inventory 0 knightkitdisplay
+replaceitem entity @e[type=radiant:shop] slot.inventory 0 kingkitdisplay
+replaceitem entity @e[type=radiant:shop] slot.inventory 0 bishopkitdisplay
+replaceitem entity @e[type=radiant:shop] slot.inventory 0 shiningkitdisplay
+replaceitem entity @e[type=radiant:shop] slot.inventory 0 lunarkitdisplay
+replaceitem entity @e[type=radiant:shop] slot.inventory 0 phantomkitdisplay
+replaceitem entity @e[type=radiant:shop] slot.inventory 0 brickDisplay
+replaceitem entity @e[type=radiant:shop] slot.inventory 0 brickDisplay
