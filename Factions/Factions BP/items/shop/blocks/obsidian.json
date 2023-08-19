@@ -10,7 +10,7 @@
             "minecraft:hand_equipped": true,
             "minecraft:foil": false,
             "minecraft:icon": { "texture": "obsidian" },
-            "minecraft:display_name": { "value": "obsidian 64x $1000" },
+            "minecraft:display_name": { "value": "Obsidian 64x $1000" },
             "minecraft:creative_category": {
                 "parent": "itemGroup.name.sword"
             }
