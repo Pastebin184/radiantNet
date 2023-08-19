@@ -1,3 +1,5 @@
+clear @a radiant:filler
+
 execute as @a[hasitem={item=radiant:logdisplay}, scores={money=100..}] run give @p oak_log 64 0
 execute as @a[hasitem={item=radiant:logdisplay}, scores={money=100..}] run scoreboard players remove @p money 100
 execute as @a[hasitem={item=radiant:logdisplay}] run clear @p radiant:logdisplay
@@ -26,7 +28,7 @@ execute as @a[hasitem={item=radiant:diamonddisplay}, scores={money=100..}] run g
 execute as @a[hasitem={item=radiant:diamonddisplay}, scores={money=100..}] run scoreboard players remove @p money 100
 execute as @a[hasitem={item=radiant:diamonddisplay}] run clear @p radiant:diamonddisplay
 
-execute as @a[hasitem={item=radiant:redstonedisplay}, scores={money=100..}] run give @p redstone_dust 64 0
+execute as @a[hasitem={item=radiant:redstonedisplay}, scores={money=100..}] run give @p redstone 64 0
 execute as @a[hasitem={item=radiant:redstonedisplay}, scores={money=100..}] run scoreboard players remove @p money 100
 execute as @a[hasitem={item=radiant:redstonedisplay}] run clear @p radiant:redstonedisplay
 

@@ -1,9 +1,0 @@
-{
-    "resource_pack_name": "items",
-    "texture_name": "atlas.items",
-    "texture_data": {
-        "radiant:log": {
-            "textures": "textures/items/log.png"
-        }
-    }
-}

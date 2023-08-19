@@ -1,0 +1,21 @@
+{
+    "resource_pack_name": "items",
+    "texture_name": "atlas.items",
+    "texture_data": {
+        "radiant:log": {
+            "textures": "textures/items/log.png"
+        },
+        "radiant:stone": {
+            "textures": "textures/items/stone.png"
+        },
+        "radiant:brick": {
+            "textures": "textures/items/brick.png"
+        },
+        "radiant:obsidian": {
+            "textures": "textures/items/obisidan.png"
+        },
+        "radiant:filler": {
+            "textures": "textures/items/filler.png"
+        }
+    }
+}
