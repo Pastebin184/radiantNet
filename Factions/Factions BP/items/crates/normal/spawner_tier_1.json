@@ -10,7 +10,7 @@
             "minecraft:hand_equipped": true,
             "minecraft:foil": true,
             "minecraft:icon": { "texture": "" },
-            "minecraft:display_name": { "value": "§l§gCrate Key\n§fCategory: Spawner Key Tier §e1§f\n\nContains:\nPig\nSheep\nCow" },
+            "minecraft:display_name": { "value": "§l§gCrate Key\n§fCategory: Spawner Key Tier §e1§f\n\nContains:\nPig (76%%)\nSheep (23%%)\nCow (1%%)" },
             "minecraft:creative_category": {
                 "parent": "itemGroup.name.sword"
             },
@@ -24,7 +24,7 @@
             "open": {
                 "run_command": {
                     "command": [
-                        "function crates/spawner_tier_1"
+                        "function crates/spawnerTier1"
                     ]
                 }
             }

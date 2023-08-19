@@ -10,7 +10,7 @@
             "minecraft:hand_equipped": true,
             "minecraft:foil": true,
             "minecraft:icon": { "texture": "nether_star" },
-            "minecraft:display_name": { "value": "§l§gCrate Key\n§fCategory: Spawner Key Tier §d3§f\n\nContains:\nWither Skeleton (23%)\nBlaze (76%)\nEnderman (1%)" },
+            "minecraft:display_name": { "value": "§l§gCrate Key\n§fCategory: Spawner Key Tier §d3§f\n\nContains:\nWither Skeleton (23%%)\nBlaze (76%%)\nEnderman (1%%)" },
             "minecraft:creative_category": {
                 "parent": "itemGroup.name.sword"
             },
@@ -24,7 +24,7 @@
             "open": {
                 "run_command": {
                     "command": [
-                        "function crates/spawner_tier_3"
+                        "function crates/spawnerTier3"
                     ]
                 }
             }

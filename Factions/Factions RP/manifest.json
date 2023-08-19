@@ -1,8 +1,8 @@
 {
 	"format_version": 2,
 	"header": {
-		"name": "Radiant Factions RP v0.02",
-		"uuid": "640ffc8f-bdba-4189-a301-dacb6389f35b",
+		"name": "Radiant Factions RP v0.03",
+		"uuid": "b7d45d5d-c363-4505-b8dd-1bd1c521d6c2",
 		"description": "Resources For Radiant Prisons",
 		"version": [1, 1, 0],
 		"min_engine_version": [1, 19, 50]
