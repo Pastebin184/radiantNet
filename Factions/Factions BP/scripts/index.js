@@ -46,3 +46,8 @@ world.beforeEvents.chatSend.subscribe((data) => {
 
 
 })
+
+system.runInterval(() => {
+    world.runCommandAsync("function shop/shopfill"),
+    20
+})

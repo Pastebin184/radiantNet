@@ -1,6 +1,5 @@
 function sellpad
 function shop/shopshop
-function shop/shopfill
 scoreboard objectives add money dummy 
 scoreboard objectives add random dummy 
 scoreboard objectives add spawnerPity_1 dummy
