@@ -1,0 +1,12 @@
+function sellpad
+function shop/shopshop
+function shop/shopfill
+function crates/spawnertier1
+function crates/spawnertier2
+function crates/spawnertier3
+function kits/bishop
+function kits/king
+function kits/knight
+function kits/lunar
+function kits/phantom
+function kits/shining
