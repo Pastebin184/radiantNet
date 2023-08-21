@@ -6,7 +6,7 @@ world.beforeEvents.chatSend.subscribe((data) => {
     let player = data.sender
     data.cancel = true 
     function hasRank() {
-        if (data.message.startsWith(!prefix)) { 
+        if (!data.message.startsWith(prefix)) { 
         if (player.getTags().filter((tags) => tags.startsWith("rank-"))[0]) {
             return player.getTags().filter((tags) => tags.startsWith("rank-"))[0].toString().slice(5)
         }
@@ -39,6 +39,12 @@ world.beforeEvents.chatSend.subscribe((data) => {
                     player.teleport(new Vector(sp.x,sp.y,sp.z))
                 })
                 break
+            case 'wild':
+                system.run(()=>{
+                    player.teleport(new Vector(Math.random() *200 + 600,Math.random() *100 + 100,Math.random() *175 + 600))
+                    player.addEffect("resistance",500,{amplifier: 255,})
+                })
+                break;
             default:
                 player.sendMessage("Not a command")
                 break
