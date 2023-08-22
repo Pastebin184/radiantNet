@@ -41,7 +41,24 @@ world.beforeEvents.chatSend.subscribe((data) => {
                 break
             case 'wild':
                 system.run(()=>{
-                    player.teleport(new Vector(Math.random() *200 + 600,Math.random() *100 + 100,Math.random() *175 + 600))
+                    switch (Math.random() * 10){
+                        case 1:
+                            player.teleport(new Vector(Math.random() *200 + 600,Math.random() *100 + 100,Math.random() *175 + 600))
+                            break
+                        case 2: 
+                            player.teleport(new Vector(Math.random() *200 + 900,Math.random() *100 + 100,Math.random() *175 + 800))
+                            break
+                        case 3:
+                            player.teleport(new Vector(Math.random() *200 + 900,Math.random() *100 + 100,Math.random() *175 + 1000))
+                            break
+                        case 4:
+                            player.teleport(new Vector(Math.random() *200 + 900,Math.random() *100 + 100,Math.random() *175 + 1000))
+                            break
+                        default:
+                            player.teleport(new Vector(Math.random() *210 +750,Math.random() *100 + 100,Math.random() *175 + 750))
+                            break
+                    }
+                    player.sendMessage("Teleported to Wild")
                     player.addEffect("resistance",500,{amplifier: 255,})
                 })
                 break;
