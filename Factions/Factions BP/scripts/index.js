@@ -1,6 +1,20 @@
-import { world, system, Vector } from "@minecraft/server";
+import {JsonDatabase} from "./database.js" //import your downloaded file
+const db = new JsonDatabase("commandCd").load();
+import { world, system, Vector } from "@minecraft/server"
 const prefix = '-'
 
+
+let d = new Date()
+let date = d.getDate()
+
+let lastDatOfMonth = new Date(d.getFullYear(),d.getMonth()+1,0)
+
+
+function getCooldown(player,kitType){
+    return db.get(player.id + kitType)??0;}
+
+function setCooldown(player,kitType,cooldown) {
+    db.set(player.id + kitType,cooldown);}
 
 world.beforeEvents.chatSend.subscribe((data) => {
     let player = data.sender
@@ -20,7 +34,9 @@ world.beforeEvents.chatSend.subscribe((data) => {
     
     if (data.message.startsWith(prefix)) {
         let sp = player.getSpawnPoint()
-        switch (data.message.replace(`${prefix}`, '')){
+        let command = data.message.replace(`${prefix}`,'').replace(/[^a-z]/g, "")
+        let subCommand = command.slice(command.length)
+        switch (command){
             case 'spawn':
                 player.runCommandAsync("tp @s 146 153 101")
                 player.sendMessage("Teleported to spawn!")
@@ -62,6 +78,58 @@ world.beforeEvents.chatSend.subscribe((data) => {
                     player.addEffect("resistance",500,{amplifier: 255,})
                 })
                 break;
+            case 'help':
+                    player.sendMessage(`These are the commands:\n${prefix}spawn\n${prefix}sethome\n${prefix}home\n${prefix}wild`)
+                    break
+            case 'kitvip':
+                console.error(getCooldown(player,"vip"))
+                    if (player.hasTag("rank.vip"))
+                    {
+                        if (date >= getCooldown(player,"vip")|| getCooldown(player,"vip") == undefined) {
+                            player.runCommandAsync("summon zombie")
+                            player.sendMessage("VIP kit claimed")
+                            setCooldown(player,"vip",date +1 )
+                        }
+                        else {
+                            player.sendMessage(`§cCommand on cooldown! Try again tomorrow!`)
+                        }
+                        if (getCooldown(player,"vip") >lastDatOfMonth)
+                            setCooldown(player,"vip",0)
+                    }
+
+                    break
+            case 'kitmvp':
+                console.error(getCooldown(player,"mvp"))
+                    if (player.hasTag("rank.mvp"))
+                    {
+                        if (date >= getCooldown(player,"mvp")|| getCooldown(player,"mvp") == undefined) {
+                            player.runCommandAsync("summon skeleton")
+                            player.sendMessage("Mvp kit claimed")
+                            setCooldown(player,"mvp",date +1 )
+                        }
+                        else {
+                            player.sendMessage(`§cCommand on cooldown! Try again tomorrow!`)
+                        }
+                        if (getCooldown(player,"mvp") >lastDatOfMonth)
+                            setCooldown(player,"mvp",0)
+                    }
+                        break
+            case 'kitradiant':
+                console.error(getCooldown(player,"radiant"))
+                    if (player.hasTag("rank.radiant"))
+                    {
+                        if (date >= getCooldown(player,"radiant")|| getCooldown(player,"radiant") == undefined) {
+                            player.runCommandAsync("summon spider")
+                            player.sendMessage("Radiant kit claimed")
+                            setCooldown(player,"radiant",date +1 )
+                        }
+                        else {
+                            player.sendMessage(`§cCommand on cooldown! Try again tomorrow!`)
+                        }
+                        if (getCooldown(player,"radiant") >lastDatOfMonth)
+                            setCooldown(player,"radiant",0)
+                    }
+                    break
             default:
                 player.sendMessage("Not a command")
                 break
@@ -71,6 +139,5 @@ world.beforeEvents.chatSend.subscribe((data) => {
 })
 
 system.runInterval(() => {
-    world.runCommandAsync("function shop/shopfill"),
-    20
-})
+    world.getAllPlayers()[0].runCommandAsync("function shop/shopfill")
+},20)      
