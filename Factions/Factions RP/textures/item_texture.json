@@ -12,7 +12,7 @@
             "textures": "textures/items/brick.png"
         },
         "radiant:obsidian": {
-            "textures": "textures/items/obisidan.png"
+            "textures": "textures/items/obsidian.png"
         },
         "radiant:filler": {
             "textures": "textures/items/filler.png"
