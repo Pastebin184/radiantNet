@@ -130,12 +130,20 @@ world.beforeEvents.chatSend.subscribe((data) => {
                             setCooldown(player,"radiant",0)
                     }
                     break
+                case 'debug':
+                    player.sendMessage("Running Stable Build 0.11")
+                    break
             default:
                 player.sendMessage("Not a command")
                 break
             }} 
 
 
+})
+
+world.afterEvents.playerSpawn.subscribe((data) => {
+    let player = data.player
+    player.sendMessage("§aHello, Welcome to §bRadiant Factions§f §a To get started grab the starter kit in front of you!§d Do -help for the commands!")
 })
 
 system.runInterval(() => {

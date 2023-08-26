@@ -1,9 +1,9 @@
 {
   "format_version": 2,
   "header": {
-      "name": "Radiant Factions BP 0.10",
+      "name": "Radiant Factions BP 0.11",
       "description": "Behaviors for Radiant Factions by Pastie",
-      "uuid": "4d467b5d-797e-4e85-a9b0-0008f2949974",
+      "uuid": "fd0c0fe4-31e3-432b-852c-1a956ca520e1",
       "min_engine_version": [
           1,
           20,
